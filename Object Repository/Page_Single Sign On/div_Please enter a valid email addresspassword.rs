@@ -6,15 +6,19 @@
    <elementGuidId>08931974-44f5-4ecc-bbc8-18f0d9ecb630</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='MainValidationSummary']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#MainValidationSummary</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'MainValidationSummary']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='MainValidationSummary']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <value>ValidationSummary ValidationSummary</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>

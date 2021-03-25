@@ -6,15 +6,19 @@
    <elementGuidId>2fd585db-df98-46cc-bd6d-f2c0f30975e3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='LoginTextBox']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#LoginTextBox</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@name = 'LoginTextBox' and @type = 'text' and @id = 'LoginTextBox']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='LoginTextBox']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

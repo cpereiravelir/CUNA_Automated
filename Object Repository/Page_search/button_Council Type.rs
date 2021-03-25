@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Event Type</name>
+   <name>button_Council Type</name>
    <tag></tag>
-   <elementGuidId>6dc8b67c-1e76-4948-87d4-531fe2e102b0</elementGuidId>
+   <elementGuidId>8b8ee8f7-d51f-4292-bb5c-8ef3fbb5d247</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#downshift-1-toggle-button</value>
+         <value>#downshift-55-toggle-button</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[(text() = 'Event Type' or . = 'Event Type')]</value>
+         <value>//*[(text() = 'Council Type' or . = 'Council Type')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='downshift-1-toggle-button']</value>
+         <value>//button[@id='downshift-55-toggle-button']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -39,7 +39,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>downshift-1-toggle-button</value>
+      <value>downshift-55-toggle-button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -60,55 +60,41 @@
       <matchCondition>equals</matchCondition>
       <name>aria-labelledby</name>
       <type>Main</type>
-      <value>downshift-1-label downshift-1-toggle-button</value>
+      <value>downshift-55-label downshift-55-toggle-button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Event Type</value>
+      <value>Council Type</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;downshift-1-toggle-button&quot;)</value>
+      <value>id(&quot;downshift-55-toggle-button&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//button[@id='downshift-1-toggle-button']</value>
+      <value>//button[@id='downshift-55-toggle-button']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//label[@id='downshift-1-label']/button</value>
+      <value>//label[@id='downshift-55-label']/button</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//label/button</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//button[@id='downshift-68-toggle-button']</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//label[@id='downshift-68-label']/button</value>
+      <value>//div[2]/label/button</value>
    </webElementXpaths>
 </WebElementEntity>

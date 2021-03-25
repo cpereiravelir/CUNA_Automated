@@ -23,48 +23,28 @@ import org.openqa.selenium.WebElement as WebElement
 import java.util.regex.Matcher as Matcher
 import java.util.regex.Pattern as Pattern
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
-import com.kms.katalon.core.annotation.TearDown
-import com.kms.katalon.core.annotation.TearDownTestCase
+import com.kms.katalon.core.annotation.TearDown as TearDown
+import com.kms.katalon.core.annotation.TearDownTestCase as TearDownTestCase
 
-//IN PROGRESS pending for sherri
+
+//Pending to add more filters
 WebUI.openBrowser('')
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils/search.html')
+WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils/search.html?q=community%20tour')
 
 WebUI.setViewPortSize(1200, 1020)
 
-'click on event dropdown'
-Eventdropdown = driver.findElement(By.xpath('//*[@id="downshift-1-toggle-button"]'))
-
-EventTestObject = WebUI.convertWebElementToTestObject(Eventdropdown)
-
-WebUI.click(EventTestObject)
-
-'Check on Conference'
-ConferenceItem = driver.findElement(By.xpath('//*[@id="downshift-1-item-1"]'))
-
-ConferenceTestObject = WebUI.convertWebElementToTestObject(ConferenceItem)
-
-WebUI.click(ConferenceTestObject)
-
-'click on Apply'
-Applybutton = driver.findElement(By.cssSelector('.custom-select__button.btn.btn--primary.btn--sm'))
-
-ApplyButtonTestObject = WebUI.convertWebElementToTestObject(Applybutton)
-
-WebUI.click(ApplyButtonTestObject)
-
 'click on Council type dropdown'
-CouncilTypeDropdown = driver.findElement(By.xpath('//*[@id="downshift-69-toggle-button"]'))
+CouncilTypeDropdown = driver.findElement(By.xpath('//*[@id="downshift-2-toggle-button"]'))
 
 CouncilTestObject = WebUI.convertWebElementToTestObject(CouncilTypeDropdown)
 
 WebUI.click(CouncilTestObject)
 
-'click on Lending dropdown'
-LendingItemDropdown = driver.findElement(By.xpath('//*[@id="downshift-69-item-3"]'))
+'click on Lending type dropdown'
+LendingItemDropdown = driver.findElement(By.xpath('//*[@id="downshift-2-item-3"]'))
 
 LendingTestObject = WebUI.convertWebElementToTestObject(LendingItemDropdown)
 
@@ -77,8 +57,11 @@ ApplyButtonTestObject = WebUI.convertWebElementToTestObject(Applybutton)
 
 WebUI.click(ApplyButtonTestObject)
 
-'verify display of active facets'
-ActiveFacetElements = driver.findElement(By.xpath('//*[@id="search-facets"]/div[2]'))
+'verify display of lending button'
+
+WebUI.delay(4) 
+
+ActiveFacetElements = driver.findElement(By.id("search-facets"))
 
 ActiveFacetsObject = WebUI.convertWebElementToTestObject(ActiveFacetElements)
 
@@ -86,16 +69,26 @@ ActiveFacetsObjectText = WebUI.getText(ActiveFacetsObject)
 
 println(ActiveFacetsObjectText)
 
-if (ActiveFacetsObjectText.contains('Lending') && ActiveFacetsObjectText.contains('Conference')) {
-	KeywordUtil.markFailedAndStop('Facets are not active, the test is failed!')
-	
+if (!(ActiveFacetsObjectText.contains('Lending'))) {
+    KeywordUtil.markFailedAndStop('Lending is not visible, so the test is failed!')
+}
+
+
+'Clear the filters selected'
+ClearFilterElement = driver.findElement(By.xpath('//*[@id="search-facets"]/div[2]/button[2]'))
+
+ClearFilterObject = WebUI.convertWebElementToTestObject(ClearFilterElement)
+
+WebUI.click(ClearFilterObject)
+
+
+'Verify Active Facets labels are not visible'
+ActiveFacetsElements2 = driver.findElements(By.cssSelector('.active-facets.is-visible'))
+
+if (ActiveFacetsElements2.size() > 0) {
+
+	KeywordUtil.markFailedAndStop('Active Facets are visible, test failed.')
 }
 
 WebUI.closeBrowser()
-
-@TearDown
-def onFailure() {
-	WebUI.closeBrowser()
-}
-
 

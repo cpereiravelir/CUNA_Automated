@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Lending_checkbox__custom</name>
+   <name>span_Conference_checkbox__custom</name>
    <tag></tag>
-   <elementGuidId>445a192d-2f40-46e9-9cab-de9ce3bdad61</elementGuidId>
+   <elementGuidId>8ce9d384-266c-41c9-a8c1-c4bd74d77753</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#downshift-57-item-3 > span.checkbox__custom</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>id(&quot;downshift-57-item-3&quot;)/span[@class=&quot;checkbox__custom&quot;]</value>
+         <value>#downshift-1-item-1 > span.checkbox__custom</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//li[@id='downshift-57-item-3']/span</value>
+         <value>//li[@id='downshift-1-item-1']/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -39,27 +35,20 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;downshift-57-item-3&quot;)/span[@class=&quot;checkbox__custom&quot;]</value>
+      <value>id(&quot;downshift-1-item-1&quot;)/span[@class=&quot;checkbox__custom&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//li[@id='downshift-57-item-3']/span</value>
+      <value>//li[@id='downshift-1-item-1']/span</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/ul/li[4]/span</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//li[@id='downshift-2-item-3']/span</value>
+      <value>//div[3]/div/div/ul/li[2]/span</value>
    </webElementXpaths>
 </WebElementEntity>

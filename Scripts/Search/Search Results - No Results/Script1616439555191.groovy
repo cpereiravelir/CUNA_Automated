@@ -20,6 +20,11 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.By as By
 import org.openqa.selenium.WebElement as WebElement
+import java.util.regex.Matcher as Matcher
+import java.util.regex.Pattern as Pattern
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
+import com.kms.katalon.core.annotation.TearDown
+import com.kms.katalon.core.annotation.TearDownTestCase
 
 WebUI.openBrowser('')
 
@@ -55,4 +60,5 @@ WebUI.click(ApplySelectedTestObject)
 WebUI.verifyTextPresent('Sorry, no results were found for your search.', false, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
+
 

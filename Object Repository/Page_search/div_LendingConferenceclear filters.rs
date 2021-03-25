@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Lending_checkbox__custom</name>
+   <name>div_LendingConferenceclear filters</name>
    <tag></tag>
-   <elementGuidId>445a192d-2f40-46e9-9cab-de9ce3bdad61</elementGuidId>
+   <elementGuidId>d3f1adfb-d5e9-4a23-9c87-0492da07afac</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#downshift-57-item-3 > span.checkbox__custom</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>id(&quot;downshift-57-item-3&quot;)/span[@class=&quot;checkbox__custom&quot;]</value>
+         <value>div.active-facets.is-visible</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//li[@id='downshift-57-item-3']/span</value>
+         <value>//div[@id='search-facets']/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -25,41 +21,41 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>active-facets is-visible</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>text</name>
       <type>Main</type>
-      <value>checkbox__custom</value>
+      <value>LendingConferenceclear filters</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;downshift-57-item-3&quot;)/span[@class=&quot;checkbox__custom&quot;]</value>
+      <value>id(&quot;search-facets&quot;)/div[@class=&quot;active-facets is-visible&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//li[@id='downshift-57-item-3']/span</value>
+      <value>//div[@id='search-facets']/div[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/ul/li[4]/span</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//li[@id='downshift-2-item-3']/span</value>
+      <value>//div[3]/div[2]</value>
    </webElementXpaths>
 </WebElementEntity>

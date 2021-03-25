@@ -23,6 +23,8 @@ import org.openqa.selenium.WebElement as WebElement
 import java.util.regex.Matcher as Matcher
 import java.util.regex.Pattern as Pattern
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
+import com.kms.katalon.core.annotation.TearDown
+import com.kms.katalon.core.annotation.TearDownTestCase
 
 WebUI.openBrowser('')
 

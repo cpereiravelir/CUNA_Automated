@@ -16,9 +16,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebElement as WebElement
+import java.util.regex.Matcher as Matcher
+import java.util.regex.Pattern as Pattern
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
+import com.kms.katalon.core.annotation.TearDown
+import com.kms.katalon.core.annotation.TearDownTestCase
 
 WebUI.openBrowser('')
+
+WebDriver driver = DriverFactory.getWebDriver()
 
 WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils.html')
 
@@ -26,18 +36,27 @@ WebUI.setViewPortSize(1200, 820)
 
 WebUI.mouseOver(findTestObject('Page_CUNA Councils/span_Conferences  Events'))
 
-WebUI.click(findTestObject('Object Repository/Page_CUNA Councils/svg_Conferences  Events_icon icon--caret-do_42ddcf'))
-
-WebUI.click(findTestObject('Object Repository/Page_CUNA Councils/span_Conferences  Events'))
+WebUI.mouseOver(findTestObject('Object Repository/Page_CUNA Councils/a_Conferences'))
 
 WebUI.click(findTestObject('Object Repository/Page_CUNA Councils/a_Conferences'))
 
-WebUI.click(findTestObject('Object Repository/Page_Conferences  Events/img'))
+'click on Logo'
+Logo = driver.findElement(By.cssSelector('.global-header__logo'))
 
-WebUI.delay(4)
+LogoObject = WebUI.convertWebElementToTestObject(Logo)
+
+WebUI.click(LogoObject)
 
 url = WebUI.getUrl()
 
 WebUI.verifyEqual(url, 'https://cuna-stage.adobemsbasic.com/content/cuna/councils.html', FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
+
+@TearDown
+def onFailure() {
+	WebUI.closeBrowser()
+}
+
+
+ 
