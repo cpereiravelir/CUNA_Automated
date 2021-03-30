@@ -36,6 +36,7 @@ WebDriver driver = DriverFactory.getWebDriver()
 
 WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils/search.html')
 
+//WebUI.maximizeWindow()
 WebUI.setViewPortSize(1200, 1020)
 
 'Fill a keyword on Search bar'
@@ -48,7 +49,7 @@ WebUI.click(findTestObject('Object Repository/Page_search/button_Search_search-b
 
 'Verify search results contains "Community tour" keyowrd'
 
-ResultItems = WebUI.getText(findTestObject('Object Repository/Page_search/Search Results Region'))
+ResultItems = WebUI.getText(findTestObject('Page_search/div_Search_Results_Region'))
 
 println(ResultItems)
 
@@ -56,7 +57,7 @@ if (!(ResultItems.contains('Community Tour'))) {
 	KeywordUtil.markFailedAndStop("There is not Community Tour items visible, so the test is failed!")
 }
 
-List searchResultLinks = CustomKeywords.'velir.utilities.GetLinksFromSection'(findTestObject('Object Repository/Page_search/Search Results Region'))
+List searchResultLinks = CustomKeywords.'velir.utilities.GetLinksFromSection'(findTestObject('null'))
 WebUI.verifyLinksAccessible(searchResultLinks, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()

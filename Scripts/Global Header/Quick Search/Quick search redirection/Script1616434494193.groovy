@@ -25,26 +25,38 @@ import java.util.regex.Pattern as Pattern
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.annotation.TearDown
 import com.kms.katalon.core.annotation.TearDownTestCase
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import org.openqa.selenium.WebElement
-import com.kms.katalon.core.webui.common.WebUiCommonHelper
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 WebUI.openBrowser('')
 
-WebDriver driver = DriverFactory.getWebDriver()
-
 WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils.html')
 
-//WebUI.maximizeWindow()
-WebUI.setViewPortSize(1200, 1020)
+WebUI.setViewPortSize(1200, 820)
 
-List FooterTopLinks = CustomKeywords.'velir.utilities.GetLinksFromSection'(findTestObject('Object Repository/Page_CUNA Councils/div_Footer_Top'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_CUNA Councils/input_Enter search term_quickSearch'), 10)
 
-WebUI.verifyLinksAccessible(FooterTopLinks, FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Object Repository/Page_CUNA Councils/input_Enter search term_quickSearch'), 'test')
 
-List FooterBottomLinks = CustomKeywords.'velir.utilities.GetLinksFromSection'(findTestObject('Object Repository/Page_CUNA Councils/Footer_bottom_container'))
+'clicking X on the quick search'
+WebUI.setText(findTestObject('Object Repository/Page_CUNA Councils/input_Enter search term_quickSearch'), '')
 
-WebUI.verifyLinksAccessible(FooterBottomLinks, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.setText(findTestObject('Object Repository/Page_CUNA Councils/input_Enter search term_quickSearch'), 'community tour')
+
+WebUI.click(findTestObject('Object Repository/Page_CUNA Councils/Magnifying_Glass_Button_Quick_Search'))
+
+'verify URL'
+
+url=WebUI.getUrl()
+
+WebUI.verifyEqual(url, 'https://cuna-stage.adobemsbasic.com/content/cuna/councils/search.html?q=community%20tour', FailureHandling.STOP_ON_FAILURE)
+
+'Verify text on Search Bar'
+
+KeywordSearchBarText = WebUI.getAttribute(findTestObject('Object Repository/Page_search/Search_Bar'), "value")
+
+println(KeywordSearchBarText)
+
+WebUI.verifyMatch('community tour', KeywordSearchBarText, false)
 
 WebUI.closeBrowser()
+

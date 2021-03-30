@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Enter search term_quickSearch</name>
+   <name>div_Search_Results_Region</name>
    <tag></tag>
-   <elementGuidId>0b6e578c-c6aa-4531-a9b7-56ccfb1a961a</elementGuidId>
+   <elementGuidId>3f19e9d2-138d-4104-bb65-f1514f34f6e3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='quickSearch']</value>
+         <value>//body[@id='search-f3a80d2db4']/div/div/div/div[2]/div[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#quickSearch</value>
+         <value>div.search__results</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@type = 'search' and @class = 'global-header__search-input' and @id = 'quickSearch']</value>
+         <value>//*[@class = 'search__results' and @aria-label = 'Search Results']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -25,69 +25,62 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>search</value>
+      <value>div</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>global-header__search-input</value>
+      <value>search__results</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
+      <name>tabindex</name>
       <type>Main</type>
-      <value>Search resources</value>
+      <value>-1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>aria-label</name>
       <type>Main</type>
-      <value>quickSearch</value>
+      <value>Search Results</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>aria-labelledby</name>
+      <name>role</name>
       <type>Main</type>
-      <value>quickSearchLabel</value>
+      <value>region</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Showing 1 - 10 of 614 Results CUNA Asset/Liability Management (ALM) eSchoolEvent Date: December 6-13, 2021CUNA Governance, Risk Management &amp; Compliance Leadership Virtual ConferenceEvent Date: September 28-30, 2021CUNA Financial Counseling Certification Program (FiCEP) Update eSchoolEvent Date: August 24 &amp; August 26, 2021CUNA Financial Counseling Certification Program (FiCEP) eSchoolEvent Date: June 9 - August 25, 2021CUNA Finance Council Virtual ConferenceEvent Date: May 18-20, 2021CUNA Investment Certification eSchool: FundamentalsEvent Date: May 4 - June 1, 2021Finance Council ChatEvent Date: April 20, 2021CUNA HR &amp; Organizational Development Council Virtual ConferenceEvent Date: April 20-22, 2021The New Subordinated Debt Rule WebinarEvent Date: April 14, 2021Community TourEvent Date: April 5, 2021</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;quickSearch&quot;)</value>
+      <value>id(&quot;search-f3a80d2db4&quot;)/div[1]/div[@class=&quot;js-search-mount&quot;]/div[@class=&quot;search&quot;]/div[@class=&quot;search__content&quot;]/div[@class=&quot;search__results&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//input[@id='quickSearch']</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//body[@id='homepage-b0ac2b38ec']/header/div/div/form/input</value>
+      <value>//body[@id='search-f3a80d2db4']/div/div/div/div[2]/div[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//input</value>
+      <value>//div[2]/div[2]</value>
    </webElementXpaths>
 </WebElementEntity>

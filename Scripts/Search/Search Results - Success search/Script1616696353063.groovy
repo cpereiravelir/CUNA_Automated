@@ -33,6 +33,7 @@ WebDriver driver = DriverFactory.getWebDriver()
 WebUI.navigateToUrl('https://cuna-dev.adobemsbasic.com/content/cuna/councils/search.html')
 //WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils/search.html')
 
+//WebUI.maximizeWindow()
 WebUI.setViewPortSize(1200, 1020)
 
 'Fill a keyword on Search bar'
@@ -45,7 +46,7 @@ WebUI.click(findTestObject('Object Repository/Page_search/button_Search_search-b
 
 'Verify search results contains "Community tour" keyowrd'
 
-ResultItems = WebUI.getText(findTestObject('Object Repository/Page_search/Search Results Region'))
+ResultItems = WebUI.getText(findTestObject('Page_search/div_Search_Results_Region'))
 
 println(ResultItems)
 

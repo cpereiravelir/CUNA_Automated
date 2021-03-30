@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Enter search term_quickSearch</name>
+   <name>input_Search_searchPageKeyword</name>
    <tag></tag>
-   <elementGuidId>0b6e578c-c6aa-4531-a9b7-56ccfb1a961a</elementGuidId>
+   <elementGuidId>d8274235-ea68-4b4e-ae44-1975fbbbdcdc</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='quickSearch']</value>
+         <value>//input[@id='searchPageKeyword']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#quickSearch</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[@type = 'search' and @class = 'global-header__search-input' and @id = 'quickSearch']</value>
+         <value>#searchPageKeyword</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -28,66 +24,59 @@
       <value>input</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>search</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>global-header__search-input</value>
-   </webElementProperties>
-   <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
+      <name>aria-labelledby</name>
       <type>Main</type>
-      <value>Search resources</value>
+      <value>searchPageKeywordLabel</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>quickSearch</value>
+      <value>searchPageKeyword</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>aria-labelledby</name>
+      <name>type</name>
       <type>Main</type>
-      <value>quickSearchLabel</value>
+      <value>text</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Search Resources</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;quickSearch&quot;)</value>
+      <value>id(&quot;searchPageKeyword&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='quickSearch']</value>
+      <value>//input[@id='searchPageKeyword']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//body[@id='homepage-b0ac2b38ec']/header/div/div/form/input</value>
+      <value>//label[@id='searchPageKeywordLabel']/div/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//input</value>
+      <value>//div/input</value>
    </webElementXpaths>
 </WebElementEntity>

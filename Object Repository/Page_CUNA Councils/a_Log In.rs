@@ -4,43 +4,41 @@
    <name>a_Log In</name>
    <tag></tag>
    <elementGuidId>d8471763-fcbf-4c67-8c28-522aa4c94f67</elementGuidId>
-   <imagePath></imagePath>
    <selectorCollection>
-      <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//a[@class = 'btn btn--primary' and (text() = 'Log In' or . = 'Log In')]</value>
-      </entry>
       <entry>
          <key>XPATH</key>
          <value>//body[@id='homepage-b0ac2b38ec']/header/div/div/div/a</value>
       </entry>
       <entry>
-         <key>IMAGE</key>
+         <key>CSS</key>
          <value></value>
       </entry>
+      <entry>
+         <key>IMAGE</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[@class = 'btn btn--primary' and (text() = 'Log In' or . = 'Log In')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
-      <value>https://ebus.cuna.org/sso/Login.aspx?vi=9&amp;vt=e6e4f7d169f25fed30cc9e0fdb25051002e2a1fa1baf586472c95b20046283073565dd9d23929488b573c1393fcb974de2401f241b47d232e8afcf7f169c6dabb7d5c6d6ddde80c6d2d70cd3cdcb019328f976347908122270ee7b79b693d30a4413c6f6e6ba014cb232384c6f9371643c5a84f0c62124806815b17bba2e64ac5b49a6f74217f5908a1c43ab3fd3242d</value>
+      <value>https://ebus.cuna.org/sso/Login.aspx?vi=9&amp;vt=5dea18eb0afc97799225a19c2a97bef1b7fdcaa80a83e111742296d43eeadefe42cfcccd7d661e157422eadcb11c3fcaba87058dfce80a993001a1faae1ef01e04ca0582de3aee5bafd5ce1403ad988b5280f53b1d6c1c1793e651b3efaa7bc4909de55c18a792bab85692bb3c6b2b44f968f322b6c17e51b8b15ba01db408f478de19f253732e234b2a507282ffe635</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
@@ -114,7 +112,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>//a[contains(@href, 'https://ebus.cuna.org/sso/Login.aspx?vi=9&amp;vt=e6e4f7d169f25fed30cc9e0fdb25051002e2a1fa1baf586472c95b20046283073565dd9d23929488b573c1393fcb974de2401f241b47d232e8afcf7f169c6dabb7d5c6d6ddde80c6d2d70cd3cdcb019328f976347908122270ee7b79b693d30a4413c6f6e6ba014cb232384c6f9371643c5a84f0c62124806815b17bba2e64ac5b49a6f74217f5908a1c43ab3fd3242d')]</value>
+      <value>//a[contains(@href, 'https://ebus.cuna.org/sso/Login.aspx?vi=9&amp;vt=5dea18eb0afc97799225a19c2a97bef1b7fdcaa80a83e111742296d43eeadefe42cfcccd7d661e157422eadcb11c3fcaba87058dfce80a993001a1faae1ef01e04ca0582de3aee5bafd5ce1403ad988b5280f53b1d6c1c1793e651b3efaa7bc4909de55c18a792bab85692bb3c6b2b44f968f322b6c17e51b8b15ba01db408f478de19f253732e234b2a507282ffe635')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -122,6 +120,13 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/div/div/a</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, 'https://ebus.cuna.org/sso/Login.aspx?vi=9&amp;vt=e6e4f7d169f25fed30cc9e0fdb25051002e2a1fa1baf586472c95b20046283073565dd9d23929488b573c1393fcb974de2401f241b47d232e8afcf7f169c6dabb7d5c6d6ddde80c6d2d70cd3cdcb019328f976347908122270ee7b79b693d30a4413c6f6e6ba014cb232384c6f9371643c5a84f0c62124806815b17bba2e64ac5b49a6f74217f5908a1c43ab3fd3242d')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

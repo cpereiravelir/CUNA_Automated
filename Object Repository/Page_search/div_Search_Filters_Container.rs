@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Enter search term_quickSearch</name>
+   <name>div_Search_Filters_Container</name>
    <tag></tag>
-   <elementGuidId>0b6e578c-c6aa-4531-a9b7-56ccfb1a961a</elementGuidId>
+   <elementGuidId>91d5cfa5-0328-480f-b370-23e88fba4949</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='quickSearch']</value>
+         <value>//body[@id='search-f3a80d2db4']/div/div/div/div[2]/div/div</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#quickSearch</value>
+         <value>div.search__filters</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@type = 'search' and @class = 'global-header__search-input' and @id = 'quickSearch']</value>
+         <value>//*[@class = 'search__filters']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -25,69 +25,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>search</value>
+      <value>div</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>global-header__search-input</value>
+      <value>search__filters</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
+      <name>text</name>
       <type>Main</type>
-      <value>Search resources</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>quickSearch</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>aria-labelledby</name>
-      <type>Main</type>
-      <value>quickSearchLabel</value>
+      <value>Showing 1 - 10 of 614 ResultsSort bySelect a Sort:RelevanceRefine bySelect one or more Event Types:Event TypeSelect one or more Council Types:Council TypeSelect one or more Content Types:Content Type </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;quickSearch&quot;)</value>
+      <value>id(&quot;search-f3a80d2db4&quot;)/div[1]/div[@class=&quot;js-search-mount&quot;]/div[@class=&quot;search&quot;]/div[@class=&quot;search__content&quot;]/div[@class=&quot;search__input-container search__input-container--default&quot;]/div[@class=&quot;search__filters&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
+      <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//input[@id='quickSearch']</value>
+      <value>//body[@id='search-f3a80d2db4']/div/div/div/div[2]/div/div</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//body[@id='homepage-b0ac2b38ec']/header/div/div/form/input</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Skip to search results'])[1]/following::div[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/following::div[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//input</value>
+      <value>//div[2]/div/div</value>
    </webElementXpaths>
 </WebElementEntity>

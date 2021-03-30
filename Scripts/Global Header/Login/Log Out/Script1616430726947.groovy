@@ -25,10 +25,6 @@ import java.util.regex.Pattern as Pattern
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.annotation.TearDown
 import com.kms.katalon.core.annotation.TearDownTestCase
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import org.openqa.selenium.WebElement
-import com.kms.katalon.core.webui.common.WebUiCommonHelper
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 WebUI.openBrowser('')
 
@@ -36,15 +32,64 @@ WebDriver driver = DriverFactory.getWebDriver()
 
 WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils.html')
 
-//WebUI.maximizeWindow()
 WebUI.setViewPortSize(1200, 1020)
 
-List FooterTopLinks = CustomKeywords.'velir.utilities.GetLinksFromSection'(findTestObject('Object Repository/Page_CUNA Councils/div_Footer_Top'))
+'Click on login'
 
-WebUI.verifyLinksAccessible(FooterTopLinks, FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_CUNA Councils/a_Log In'))
 
-List FooterBottomLinks = CustomKeywords.'velir.utilities.GetLinksFromSection'(findTestObject('Object Repository/Page_CUNA Councils/Footer_bottom_container'))
+'Verify Login URL'
+LoginRedirectionUrl = WebUI.getUrl()
 
-WebUI.verifyLinksAccessible(FooterBottomLinks, FailureHandling.STOP_ON_FAILURE)
+println(LoginRedirectionUrl)
+
+if (!(LoginRedirectionUrl.contains('https://ebus.cuna.org/sso/Login.aspx'))) {
+	KeywordUtil.markFailedAndStop('Not the correct URL, the test is failed!')
+}
+
+'Fill username and password'
+WebUI.setText(findTestObject('Page_Single Sign On/input_Invalid Email_LoginTextBox'), 'kai.rasmussen@velir.com')
+
+WebUI.setEncryptedText(findTestObject('Page_Single Sign On/input_Invalid Password_PasswordTextBox'), 'TNnFnhMdEPHm6g13xQRQ0w==')
+
+'Click on Submit/Login'
+
+WebUI.click(findTestObject('Page_Single Sign On/input_Remember me on this device_SubmitButton'))
+
+'Verify URL'
+AfterLoggedUrl = WebUI.getUrl()
+
+if (!(AfterLoggedUrl.equals('https://cuna-stage.adobemsbasic.com/content/cuna/councils.html'))){
+	KeywordUtil.markFailedAndStop('Not the correct URL, the test is failed!')
+}
+
+'Verify that we are logged'
+LoginAuthElement = driver.findElements(By.cssSelector('.global-header__login.js-login.is-auth'))
+
+println(LoginAuthElement)
+
+if (LoginAuthElement.size() < 1) {
+
+	KeywordUtil.markFailedAndStop('Not logged, test failed.')
+}
+
+'Click on the Email(login) button'
+
+WebUI.click(findTestObject('Object Repository/Page_CUNA Councils/Logged_button'))
+
+'Verify display of the logout'
+
+WebUI.verifyTextPresent('Logout', true, FailureHandling.STOP_ON_FAILURE)
+
+'Click on Logout'
+
+WebUI.click(findTestObject('Object Repository/Page_CUNA Councils/a_Logout'))
+
+WebUI.delay(3)
+
+'Verify button shows Login again'
+
+WebUI.verifyElementVisible(findTestObject('Page_CUNA Councils/a_Log In'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
+

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Log in Success</name>
+   <name>Search - Page elements</name>
    <tag></tag>
    <integratedEntity>
       <productName>com.katalon.plugin.testrail.TestRailIntegration</productName>
       <properties>
          <entry>
             <key>testRail.testcase.id</key>
-            <value>403568</value>
+            <value>403467</value>
          </entry>
       </properties>
       <type>TESTCASE</type>
    </integratedEntity>
    <comment></comment>
-   <testCaseGuid>c98a7239-843f-4e90-8608-21d9111dd411</testCaseGuid>
+   <testCaseGuid>53611c1a-61ce-4ef6-9cf8-726cfbe39ed1</testCaseGuid>
 </TestCaseEntity>

@@ -34,17 +34,65 @@ WebUI.openBrowser('')
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils.html')
+WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils/toolssearch.html')
 
 //WebUI.maximizeWindow()
 WebUI.setViewPortSize(1200, 1020)
 
-List FooterTopLinks = CustomKeywords.'velir.utilities.GetLinksFromSection'(findTestObject('Object Repository/Page_CUNA Councils/div_Footer_Top'))
+'Verify Search Bar functionality'
+WebUI.setText(findTestObject('Object Repository/Page_Resources/input_Search_searchPageKeyword'), 'Diamond Award')
 
-WebUI.verifyLinksAccessible(FooterTopLinks, FailureHandling.STOP_ON_FAILURE)
+WebUI.sendKeys(findTestObject('Object Repository/Page_Resources/input_Search_searchPageKeyword'), Keys.chord(Keys.ENTER))
 
-List FooterBottomLinks = CustomKeywords.'velir.utilities.GetLinksFromSection'(findTestObject('Object Repository/Page_CUNA Councils/Footer_bottom_container'))
+//WebUI.click(findTestObject('Object Repository/Page_Resources/svg_Search_icon icon--search'))
 
-WebUI.verifyLinksAccessible(FooterBottomLinks, FailureHandling.STOP_ON_FAILURE)
+'verify more than 1 results'
 
-WebUI.closeBrowser()
+ResultsLabelElement = driver.findElement(By.cssSelector('.search__results-text'))
+ 
+ NumberResultsLabelObject = WebUI.convertWebElementToTestObject(ResultsLabelElement)
+ 
+ NumberOfResults = WebUI.getText(NumberResultsLabelObject).replaceAll('\\n|\\r', '')
+ 
+ //Gets Number + Result ex: 10 Results
+ Pattern regexResults = Pattern.compile('\\d+ Results')
+ 
+ Matcher MatchNumberResults = regexResults.matcher(NumberOfResults)
+ 
+ if (MatchNumberResults.find()) {
+	 expectedLabelResutl = MatchNumberResults.group()
+ //Getting just the number
+	 Pattern regexNumber = Pattern.compile('\\d+')
+ 
+	 Matcher matchNumber = regexNumber.matcher(expectedLabelResutl)
+ 
+	 if (matchNumber.find()) {
+		 TotalResults = matchNumber.group()
+ 
+		 println(TotalResults)
+ //comparing with >=1
+		 WebUI.verifyGreaterThanOrEqual(TotalResults, 1, FailureHandling.STOP_ON_FAILURE)
+	 }
+ }
+ 
+
+WebUI.click(findTestObject('null'))
+
+WebUI.click(findTestObject('null'))
+
+WebUI.click(findTestObject('Object Repository/Page_Resources/button_Apply'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Resources/h2_Sorry, no results were found for your search'), 
+    0)
+
+WebUI.click(findTestObject('Object Repository/Page_Resources/button_clear filters'))
+
+WebUI.click(findTestObject('Object Repository/Page_Resources/p_Content Type'))
+
+WebUI.click(findTestObject('null'))
+
+WebUI.click(findTestObject('Object Repository/Page_Resources/button_Apply'))
+
+WebUI.verifyElementPresent(findTestObject('null'), 
+    0)
+

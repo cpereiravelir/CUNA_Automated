@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Conferences  Events</name>
+   <name>span_Awards  Scholarships</name>
    <tag></tag>
-   <elementGuidId>57aad6cc-ee86-46e9-a6b2-6d99d5687497</elementGuidId>
+   <elementGuidId>9cb6f65f-e144-4506-8170-482e9c722ca4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[@id='primary-nav-1']</value>
+         <value>//span[@id='primary-nav-2']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#primary-nav-1</value>
+         <value>#primary-nav-2</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>id(&quot;primary-nav-1&quot;)[count(. | //*[@id = 'primary-nav-1']) = count(//*[@id = 'primary-nav-1'])]</value>
+         <value>id(&quot;primary-nav-2&quot;)[count(. | //*[@id = 'primary-nav-2']) = count(//*[@id = 'primary-nav-2'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -28,11 +28,11 @@
       <value>span</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>primary-nav-1</value>
+      <value>primary-nav-2</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -40,73 +40,73 @@
       <name>text</name>
       <type>Main</type>
       <value>
-              Conferences &amp; Events
+              Awards &amp; Scholarships
               
                 
               
             </value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;primary-nav-1&quot;)</value>
+      <value>id(&quot;primary-nav-2&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//span[@id='primary-nav-1']</value>
+      <value>//span[@id='primary-nav-2']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//body[@id='homepage-b0ac2b38ec']/header/nav/div/ul/li[2]/span</value>
+      <value>//body[@id='eventssearch-b836e2c9da']/header/nav/div/ul/li[3]/span</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Milestones'])[1]/following::span[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Speaker Proposal'])[1]/following::span[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Membership Eligibility'])[1]/following::span[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Chats'])[1]/following::span[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='CONFERENCES &amp; EVENTS'])[1]/preceding::span[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='AWARDS &amp; SCHOLARSHIPS'])[1]/preceding::span[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Conferences'])[1]/preceding::span[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Awards Programs'])[1]/preceding::span[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Conferences &amp; Events']/parent::*</value>
+      <value>//*/text()[normalize-space(.)='Awards &amp; Scholarships']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li[2]/span</value>
+      <value>//li[3]/span</value>
    </webElementXpaths>
 </WebElementEntity>

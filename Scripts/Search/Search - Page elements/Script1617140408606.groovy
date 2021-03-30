@@ -25,38 +25,27 @@ import java.util.regex.Pattern as Pattern
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.annotation.TearDown
 import com.kms.katalon.core.annotation.TearDownTestCase
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils.html')
+WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.setViewPortSize(1200, 820)
+WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils/search.html')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_CUNA Councils/input_Enter search term_quickSearch'), 10)
+//WebUI.maximizeWindow()
+WebUI.setViewPortSize(1200, 1020)
 
-WebUI.setText(findTestObject('Object Repository/Page_CUNA Councils/input_Enter search term_quickSearch'), 'test')
+WebUI.verifyElementPresent(findTestObject('Page_search/div_Page_banner'), 10)
 
-'clicking X on the quick search'
-WebUI.setText(findTestObject('Object Repository/Page_CUNA Councils/input_Enter search term_quickSearch'), '')
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_search/div_Search_search__input'), 10)
 
+WebUI.verifyElementPresent(findTestObject('Page_search/div_Search_Filters_Container'), 10)
 
-WebUI.setText(findTestObject('Object Repository/Page_CUNA Councils/input_Enter search term_quickSearch'), 'community tour')
-
-WebUI.click(findTestObject('Object Repository/Page_CUNA Councils/svg_Enter search term_icon icon--search'))
-
-'verify URL'
-
-url=WebUI.getUrl()
-
-WebUI.verifyEqual(url, 'https://cuna-stage.adobemsbasic.com/content/cuna/councils/search.html?q=community%20tour', FailureHandling.STOP_ON_FAILURE)
-
-'Verify text on Search Bar'
-
-KeywordSearchBarText = WebUI.getAttribute(findTestObject('Object Repository/Page_search/Search_Bar'), "value")
-
-println(KeywordSearchBarText)
-
-WebUI.verifyMatch('community tour', KeywordSearchBarText, false)
+WebUI.verifyElementPresent(findTestObject('Page_search/div_Search_Results_Region'), 10)
 
 WebUI.closeBrowser()
 

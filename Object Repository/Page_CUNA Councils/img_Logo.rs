@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Enter search term_quickSearch</name>
+   <name>img_Logo</name>
    <tag></tag>
-   <elementGuidId>0b6e578c-c6aa-4531-a9b7-56ccfb1a961a</elementGuidId>
+   <elementGuidId>48b1d616-9ce7-4e18-942a-1a3a0bacd2c4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='quickSearch']</value>
+         <value>//body[@id='homepage-b0ac2b38ec']/header/div/a/img</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#quickSearch</value>
+         <value>img[alt=&quot;Cuna Logo&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@type = 'search' and @class = 'global-header__search-input' and @id = 'quickSearch']</value>
+         <value>id(&quot;homepage-b0ac2b38ec&quot;)/header[@class=&quot;js-global-header global-header&quot;]/div[@class=&quot;global-header__container&quot;]/a[@class=&quot;global-header__logo&quot;]/img[1][count(. | //*[@alt = 'Cuna Logo']) = count(//*[@alt = 'Cuna Logo'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -25,69 +25,62 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>search</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>global-header__search-input</value>
+      <value>img</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
+      <name>src</name>
       <type>Main</type>
-      <value>Search resources</value>
+      <value>/content/dam/cuna-councils/logos/CUNA-Councils_280x106.jpg</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>alt</name>
       <type>Main</type>
-      <value>quickSearch</value>
+      <value>Cuna Logo</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>aria-labelledby</name>
+      <name>width</name>
       <type>Main</type>
-      <value>quickSearchLabel</value>
+      <value>100%</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>height</name>
+      <type>Main</type>
+      <value>100%</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;quickSearch&quot;)</value>
+      <value>id(&quot;homepage-b0ac2b38ec&quot;)/header[@class=&quot;js-global-header global-header&quot;]/div[@class=&quot;global-header__container&quot;]/a[@class=&quot;global-header__logo&quot;]/img[1]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
+      <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//input[@id='quickSearch']</value>
+      <value>//body[@id='homepage-b0ac2b38ec']/header/div/a/img</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:img</name>
       <type>Main</type>
-      <value>//body[@id='homepage-b0ac2b38ec']/header/div/div/form/input</value>
+      <value>//img[@alt='Cuna Logo']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//input</value>
+      <value>//img</value>
    </webElementXpaths>
 </WebElementEntity>

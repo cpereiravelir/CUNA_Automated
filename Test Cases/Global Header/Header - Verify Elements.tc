@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Log in Fail</name>
+   <name>Header - Verify Elements</name>
    <tag></tag>
    <integratedEntity>
       <productName>com.katalon.plugin.testrail.TestRailIntegration</productName>
       <properties>
          <entry>
             <key>testRail.testcase.id</key>
-            <value>403567</value>
+            <value>403351</value>
          </entry>
       </properties>
       <type>TESTCASE</type>
    </integratedEntity>
    <comment></comment>
-   <testCaseGuid>ffe93a9a-3750-4b60-9fb0-5a5e3445eec3</testCaseGuid>
+   <testCaseGuid>6c49d9d2-b28e-4eb5-989e-c8a5a647dce8</testCaseGuid>
 </TestCaseEntity>

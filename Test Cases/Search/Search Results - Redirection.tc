@@ -3,6 +3,16 @@
    <description></description>
    <name>Search Results - Redirection</name>
    <tag></tag>
+   <integratedEntity>
+      <productName>com.katalon.plugin.testrail.TestRailIntegration</productName>
+      <properties>
+         <entry>
+            <key>testRail.testcase.id</key>
+            <value>403941</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
    <comment></comment>
    <testCaseGuid>5ff957ef-3878-43bb-9f05-8231cb4f5225</testCaseGuid>
 </TestCaseEntity>

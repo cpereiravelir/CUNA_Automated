@@ -39,12 +39,41 @@ WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils.h
 //WebUI.maximizeWindow()
 WebUI.setViewPortSize(1200, 1020)
 
-List FooterTopLinks = CustomKeywords.'velir.utilities.GetLinksFromSection'(findTestObject('Object Repository/Page_CUNA Councils/div_Footer_Top'))
+'Verify mouse over on Conference Primary Nav item'
+WebUI.mouseOver(findTestObject('Object Repository/Page_CUNA Councils/span_Conferences  Events'))
 
-WebUI.verifyLinksAccessible(FooterTopLinks, FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(2)
 
-List FooterBottomLinks = CustomKeywords.'velir.utilities.GetLinksFromSection'(findTestObject('Object Repository/Page_CUNA Councils/Footer_bottom_container'))
+'Verify mouse over on Conference Submenu item'
+WebUI.mouseOver(findTestObject('Object Repository/Page_CUNA Councils/a_Conferences'))
 
-WebUI.verifyLinksAccessible(FooterBottomLinks, FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Object Repository/Page_CUNA Councils/a_Conferences'))
+
+'Verify mouse over on Awards Scholarships Primary nav item'
+WebUI.mouseOver(findTestObject('Object Repository/Page_Conferences  Events/span_Awards  Scholarships'))
+
+WebUI.delay(2)
+
+'Verify mouse over on Awards Programs Submenu item'
+WebUI.mouseOver(findTestObject('Object Repository/Page_Conferences  Events/a_Awards Programs'))
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Object Repository/Page_Conferences  Events/a_Awards Programs'))
+
+'Verify mouse over on About Primary Nav item'
+WebUI.mouseOver(findTestObject('Object Repository/Page_Operations  Member Experience Council _1c7657/span_About'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Page_Operations  Member Experience Council Awards Programs/a_ABOUT'))
+
+'Verify Links accessible'
+List PrimaryNavLinks = CustomKeywords.'velir.utilities.GetLinksFromSection'(findTestObject('Object Repository/Page_CUNA Councils/Primary_Nav_Menu'))
+
+WebUI.verifyLinksAccessible(PrimaryNavLinks, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
+
