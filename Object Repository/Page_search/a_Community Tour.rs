@@ -1,114 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_Free Webinar</name>
+   <name>a_Community Tour</name>
    <tag></tag>
-   <elementGuidId>0b7df0b4-985b-446f-ba99-a6353cc3ac3c</elementGuidId>
+   <elementGuidId>8b4ede78-2eba-4e91-aff9-452b942aa2d0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*/text()[normalize-space(.)='Free Webinar']/parent::*</value>
+         <value>//body[@id='search-f3a80d2db4']/div/div/div/div[2]/div[2]/div/div/article/a</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#event-type__menu-item--0</value>
+         <value>a.h4.underlined</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'event-type__menu-item--0' and (text() = ' Free Webinar' or . = ' Free Webinar')]</value>
+         <value>//*[@href = '/content/cuna/councils/conferences---events0/Community-Tour.html' and (text() = 'Community Tour' or . = 'Community Tour')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>li</value>
+      <value>a</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/content/cuna/councils/conferences---events0/Community-Tour.html</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>custom-select__item is-highlighted</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>role</name>
-      <type>Main</type>
-      <value>option</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>aria-selected</name>
-      <type>Main</type>
-      <value>true</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>event-type__menu-item--0</value>
+      <value>h4 underlined</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value> Free Webinar</value>
+      <value>Community Tour</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;event-type__menu-item--0&quot;)</value>
+      <value>id(&quot;search-f3a80d2db4&quot;)/div[1]/div[@class=&quot;js-search-mount&quot;]/div[@class=&quot;search&quot;]/div[@class=&quot;search__content&quot;]/div[@class=&quot;search__results&quot;]/div[1]/div[1]/article[@class=&quot;search__result&quot;]/a[@class=&quot;h4 underlined&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
+      <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//li[@id='event-type__menu-item--0']</value>
+      <value>//body[@id='search-f3a80d2db4']/div/div/div/div[2]/div[2]/div/div/article/a</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:link</name>
       <type>Main</type>
-      <value>//ul[@id='event-type__menu']/li</value>
+      <value>//a[contains(text(),'Community Tour')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Free Webinar']/parent::*</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Event Date:'])[1]/preceding::a[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='April 5, 2021'])[1]/preceding::a[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Community Tour']/parent::*</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/content/cuna/councils/conferences---events0/Community-Tour.html')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div/ul/li</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//li[@id='downshift-1-item-0']</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//ul[@id='downshift-1-menu']/li</value>
+      <value>//article/a</value>
    </webElementXpaths>
 </WebElementEntity>

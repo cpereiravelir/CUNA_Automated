@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_LendingConferenceclear filters</name>
+   <name>input_Search_searchPageKeyword</name>
    <tag></tag>
-   <elementGuidId>d3f1adfb-d5e9-4a23-9c87-0492da07afac</elementGuidId>
+   <elementGuidId>1b591d3e-88f6-4497-8e43-5f43a827cf27</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.active-facets.is-visible</value>
+         <key>XPATH</key>
+         <value>//input[@id='searchPageKeyword']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='search-facets']/div[2]</value>
+         <key>CSS</key>
+         <value>#searchPageKeyword</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,41 +21,62 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>active-facets is-visible</value>
+      <value>input</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>aria-labelledby</name>
       <type>Main</type>
-      <value>LendingConferenceclear filters</value>
+      <value>searchPageKeywordLabel</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>searchPageKeyword</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Enter search term</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;search-facets&quot;)/div[@class=&quot;active-facets is-visible&quot;]</value>
+      <value>id(&quot;searchPageKeyword&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@id='searchPageKeyword']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='search-facets']/div[2]</value>
+      <value>//label[@id='searchPageKeywordLabel']/div/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div[2]</value>
+      <value>//div/input</value>
    </webElementXpaths>
 </WebElementEntity>

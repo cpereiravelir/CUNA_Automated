@@ -3,6 +3,16 @@
    <description></description>
    <name>Search Results - Multiple Facets</name>
    <tag></tag>
+   <integratedEntity>
+      <productName>com.katalon.plugin.testrail.TestRailIntegration</productName>
+      <properties>
+         <entry>
+            <key>testRail.testcase.id</key>
+            <value>403587</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
    <comment></comment>
-   <testCaseGuid>dbe583d4-8f27-4eae-9255-6d10bcea8133</testCaseGuid>
+   <testCaseGuid>55e74d12-264b-43b7-9494-d8887ee2d4f6</testCaseGuid>
 </TestCaseEntity>

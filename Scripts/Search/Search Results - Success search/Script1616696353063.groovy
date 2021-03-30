@@ -30,9 +30,28 @@ WebUI.openBrowser('')
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils/search.html?q=community%20tour')
+WebUI.navigateToUrl('https://cuna-dev.adobemsbasic.com/content/cuna/councils/search.html')
+//WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils/search.html')
 
 WebUI.setViewPortSize(1200, 1020)
+
+'Fill a keyword on Search bar'
+WebUI.setText(findTestObject('Object Repository/Page_search/input_Search_searchPageKeyword'),'Community Tour')
+
+
+'Click on magnifying glass'
+
+WebUI.click(findTestObject('Object Repository/Page_search/button_Search_search-btn'))
+
+'Verify search results contains "Community tour" keyowrd'
+
+ResultItems = WebUI.getText(findTestObject('Object Repository/Page_search/Search Results Region'))
+
+println(ResultItems)
+
+if (!(ResultItems.contains('Community Tour'))) {
+	KeywordUtil.markFailedAndStop("There is not Community Tour items visible, so the test is failed!")
+}
 
 'click on Council type dropdown'
 CouncilTypeDropdown = driver.findElement(By.xpath('//*[@id="downshift-2-toggle-button"]'))

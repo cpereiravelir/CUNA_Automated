@@ -30,30 +30,20 @@ WebUI.openBrowser('')
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils/search.html?q=community%20tour')
+WebUI.navigateToUrl('https://cuna-dev.adobemsbasic.com/content/cuna/councils/search.html')
+//WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils/search.html?q=community%20tour')
 
 WebUI.setViewPortSize(1200, 1020)
 
+
 'click on event dropdown'
-Eventdropdown = driver.findElement(By.xpath('//*[@id="downshift-1-toggle-button"]'))
-
-EventTestObject = WebUI.convertWebElementToTestObject(Eventdropdown)
-
-WebUI.click(EventTestObject)
+WebUI.click(findTestObject('Object Repository/Page_search/button_Event Type'))
 
 'Check on free webinar'
-FreeWebinar = driver.findElement(By.xpath('//*[@id="downshift-1-item-0"]'))
-
-WebinarTestObject = WebUI.convertWebElementToTestObject(FreeWebinar)
-
-WebUI.click(WebinarTestObject)
+WebUI.click(findTestObject('Object Repository/Page_search/li_Free Webinar'))
 
 'Apply item selected'
-ClickApply = driver.findElement(By.xpath('//*[@id="downshift-1-menu"]/div/button[1]'))
-
-ApplySelectedTestObject = WebUI.convertWebElementToTestObject(ClickApply)
-
-WebUI.click(ApplySelectedTestObject)
+WebUI.click(findTestObject('Object Repository/Page_search/button_Apply'))
 
 'Verify No results message'
 

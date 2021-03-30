@@ -1,82 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>img</name>
+   <name>Active_Facets_Bar</name>
    <tag></tag>
-   <elementGuidId>8161ed73-f026-456f-bf7b-f30bff87872b</elementGuidId>
+   <elementGuidId>d3f1adfb-d5e9-4a23-9c87-0492da07afac</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//img[@alt='Cuna Logo']</value>
+         <value>//div[@id='search-facets']/div[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>img[alt=&quot;Cuna Logo&quot;]</value>
+         <value>div.active-facets.is-visible</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'active-facets is-visible']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>img</value>
+      <value>div</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>src</name>
+      <name>class</name>
       <type>Main</type>
-      <value>/content/dam/cuna-councils/logos/CUNA-Councils_280x106.jpg</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>alt</name>
-      <type>Main</type>
-      <value>Cuna Logo</value>
+      <value>active-facets is-visible</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>width</name>
+      <name>text</name>
       <type>Main</type>
-      <value>100%</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>height</name>
-      <type>Main</type>
-      <value>100%</value>
+      <value>LendingConferenceclear filters</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;eventssearch-b836e2c9da&quot;)/header[@class=&quot;js-global-header global-header&quot;]/div[@class=&quot;global-header__container&quot;]/a[@class=&quot;global-header__logo&quot;]/img[1]</value>
+      <value>id(&quot;search-facets&quot;)/div[@class=&quot;active-facets is-visible&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//body[@id='eventssearch-b836e2c9da']/header/div/a/img</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:img</name>
-      <type>Main</type>
-      <value>//img[@alt='Cuna Logo']</value>
+      <value>//div[@id='search-facets']/div[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//img</value>
+      <value>//div[3]/div[2]</value>
    </webElementXpaths>
 </WebElementEntity>

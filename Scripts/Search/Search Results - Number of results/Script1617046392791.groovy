@@ -29,30 +29,35 @@ import com.kms.katalon.core.annotation.TearDownTestCase as TearDownTestCase
 
 WebUI.openBrowser('')
 
+WebUI.navigateToUrl('https://cuna-dev.adobemsbasic.com/content/cuna/councils/search.html')
+
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils/search.html')
+WebUI.setViewPortSize(1200, 1020)
 
+'click on event dropdown'
 WebUI.click(findTestObject('Object Repository/Page_search/button_Event Type'))
 
-WebUI.click(findTestObject('Object Repository/Page_search/span_Conference_checkbox__custom'))
+'Check on Conference'
+WebUI.click(findTestObject('Object Repository/Page_search/li_Conference'))
 
+'Apply item selected'
 WebUI.click(findTestObject('Object Repository/Page_search/button_Apply'))
 
+
+'click on Council Type dropdown'
 WebUI.click(findTestObject('Object Repository/Page_search/button_Council Type'))
 
-WebUI.click(findTestObject('Object Repository/Page_search/span_Lending_checkbox__custom'))
+'Check on Lending'
+WebUI.click(findTestObject('Object Repository/Page_search/li_Lending'))
 
+'Apply item selected'
 WebUI.click(findTestObject('Object Repository/Page_search/button_Apply'))
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/Page_search/div_LendingConferenceclear filters'))
-
-WebUI.click(findTestObject('Object Repository/Page_search/p_Showing 1 - 1 of 1 Results'))
+'Verify Active Filters bar'
+WebUI.verifyElementVisible(findTestObject('Page_search/Active_Facets_Bar'))
 
 'Verify more than 1 results'
-//ResultsLabelElement = driver.findElement(By.xpath('//*[@id="search-f3a80d2db4"]/div[1]/div/div/div[2]/div[2]/p'))
-
-//NumberResultsLabelObject = WebUI.convertWebElementToTestObject(ResultsLabelElement)
 
 NumberOfResults = WebUI.getText(findTestObject('Object Repository/Page_search/p_Showing 1 - 1 of 1 Results')).replaceAll('\\n|\\r', '')
 
@@ -80,5 +85,5 @@ if (MatchNumberResults.find()) {
 
 WebUI.click(findTestObject('Object Repository/Page_search/button_clear filters'))
 
-WebUI.verifyElementNotPresent(findTestObject('Page_search/div_LendingConferenceclear filters'), 5, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementNotPresent(findTestObject('Page_search/Active_Facets_Bar'), 5, FailureHandling.STOP_ON_FAILURE)
 

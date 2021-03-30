@@ -43,7 +43,9 @@ LoginButtonObject = WebUI.convertWebElementToTestObject(LoginButtonElement)
 
 WebUI.click(LoginButtonObject)
 
-WebUI.delay(7)
+//WebUI.delay(7)
+
+WebUI.waitForPageLoad(10)
 
 'Verify URL'
 LoginRedirectionUrl = WebUI.getUrl()
@@ -76,6 +78,7 @@ SubmitElement = driver.findElement(By.id("SubmitButton"))
 SubmitObject = WebUI.convertWebElementToTestObject(SubmitElement)
 
 WebUI.click(SubmitObject)
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Single Sign On/div_Please enter a valid email addresspassword'), 30)
 /*
 WebUI.delay(10)

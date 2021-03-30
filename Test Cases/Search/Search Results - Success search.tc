@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Search Results - Success</name>
+   <name>Search Results - Success search</name>
    <tag></tag>
    <integratedEntity>
       <productName>com.katalon.plugin.testrail.TestRailIntegration</productName>

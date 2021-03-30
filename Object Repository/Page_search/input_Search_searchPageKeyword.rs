@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>img</name>
+   <name>input_Search_searchPageKeyword</name>
    <tag></tag>
-   <elementGuidId>8161ed73-f026-456f-bf7b-f30bff87872b</elementGuidId>
+   <elementGuidId>3f23db49-14e6-4156-bd90-95e44e9681ca</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//img[@alt='Cuna Logo']</value>
+         <key>BASIC</key>
+         <value>id(&quot;searchPageKeyword&quot;)[count(. | //*[@id = 'searchPageKeyword']) = count(//*[@id = 'searchPageKeyword'])]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>img[alt=&quot;Cuna Logo&quot;]</value>
+         <value>#searchPageKeyword</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='searchPageKeyword']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,62 +25,62 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>img</value>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-labelledby</name>
+      <type>Main</type>
+      <value>searchPageKeywordLabel</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>src</name>
+      <name>id</name>
       <type>Main</type>
-      <value>/content/dam/cuna-councils/logos/CUNA-Councils_280x106.jpg</value>
+      <value>searchPageKeyword</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Enter search term</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>alt</name>
-      <type>Main</type>
-      <value>Cuna Logo</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>width</name>
-      <type>Main</type>
-      <value>100%</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>height</name>
-      <type>Main</type>
-      <value>100%</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;eventssearch-b836e2c9da&quot;)/header[@class=&quot;js-global-header global-header&quot;]/div[@class=&quot;global-header__container&quot;]/a[@class=&quot;global-header__logo&quot;]/img[1]</value>
+      <value>id(&quot;searchPageKeyword&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//body[@id='eventssearch-b836e2c9da']/header/div/a/img</value>
+      <value>//input[@id='searchPageKeyword']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:img</name>
+      <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//img[@alt='Cuna Logo']</value>
+      <value>//label[@id='searchPageKeywordLabel']/div/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//img</value>
+      <value>//div/input</value>
    </webElementXpaths>
 </WebElementEntity>

@@ -6,6 +6,10 @@
    <elementGuidId>6a9dee35-0c0b-4b88-9e73-f5c2a3e302d3</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='cancel'])[1]/preceding::button[1]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>button.custom-select__button.btn.btn--primary.btn--sm</value>
       </entry>
@@ -13,12 +17,8 @@
          <key>BASIC</key>
          <value>id(&quot;downshift-1-menu&quot;)/div[@class=&quot;custom-select__button-group&quot;]/button[@class=&quot;custom-select__button btn btn--primary btn--sm&quot;][count(. | //*[@class = 'custom-select__button btn btn--primary btn--sm' and (text() = 'Apply' or . = 'Apply')]) = count(//*[@class = 'custom-select__button btn btn--primary btn--sm' and (text() = 'Apply' or . = 'Apply')])]</value>
       </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//ul[@id='downshift-1-menu']/div/button</value>
-      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -28,7 +28,7 @@
       <value>button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
@@ -42,18 +42,18 @@
       <value>Apply</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;downshift-1-menu&quot;)/div[@class=&quot;custom-select__button-group&quot;]/button[@class=&quot;custom-select__button btn btn--primary btn--sm&quot;]</value>
+      <value>id(&quot;council-type__menu&quot;)/div[@class=&quot;custom-select__button-group&quot;]/button[@class=&quot;custom-select__button btn btn--primary btn--sm&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//ul[@id='downshift-1-menu']/div/button</value>
+      <value>//ul[@id='council-type__menu']/div/button</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -75,6 +75,13 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul/div/button</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//ul[@id='downshift-1-menu']/div/button</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

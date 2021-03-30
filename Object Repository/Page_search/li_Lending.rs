@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_Free Webinar</name>
+   <name>li_Lending</name>
    <tag></tag>
-   <elementGuidId>0b7df0b4-985b-446f-ba99-a6353cc3ac3c</elementGuidId>
+   <elementGuidId>2070426f-5447-4a6f-bf65-794fe3f2b5a1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*/text()[normalize-space(.)='Free Webinar']/parent::*</value>
+         <value>//*/text()[normalize-space(.)='Lending']/parent::*</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#event-type__menu-item--0</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[@id = 'event-type__menu-item--0' and (text() = ' Free Webinar' or . = ' Free Webinar')]</value>
+         <value>#council-type__menu-item--3</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -53,62 +49,48 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>event-type__menu-item--0</value>
+      <value>council-type__menu-item--3</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value> Free Webinar</value>
+      <value> Lending</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;event-type__menu-item--0&quot;)</value>
+      <value>id(&quot;council-type__menu-item--3&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//li[@id='event-type__menu-item--0']</value>
+      <value>//li[@id='council-type__menu-item--3']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//ul[@id='event-type__menu']/li</value>
+      <value>//ul[@id='council-type__menu']/li[4]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Free Webinar']/parent::*</value>
+      <value>//*/text()[normalize-space(.)='Lending']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div/ul/li</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//li[@id='downshift-1-item-0']</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//ul[@id='downshift-1-menu']/li</value>
+      <value>//div[2]/ul/li[4]</value>
    </webElementXpaths>
 </WebElementEntity>

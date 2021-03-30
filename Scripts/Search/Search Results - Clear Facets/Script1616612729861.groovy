@@ -27,45 +27,30 @@ import com.kms.katalon.core.annotation.TearDown as TearDown
 import com.kms.katalon.core.annotation.TearDownTestCase as TearDownTestCase
 
 
-//Pending to add more filters
 WebUI.openBrowser('')
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils/search.html?q=community%20tour')
+WebUI.navigateToUrl('https://cuna-dev.adobemsbasic.com/content/cuna/councils/search.html')
+//WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils/search.html?q=community%20tour')
 
 WebUI.setViewPortSize(1200, 1020)
 
-'click on Council type dropdown'
-CouncilTypeDropdown = driver.findElement(By.xpath('//*[@id="downshift-2-toggle-button"]'))
+'click on Council Type dropdown'
+WebUI.click(findTestObject('Object Repository/Page_search/button_Council Type'))
 
-CouncilTestObject = WebUI.convertWebElementToTestObject(CouncilTypeDropdown)
+'Check on Lending'
+WebUI.click(findTestObject('Object Repository/Page_search/li_Lending'))
 
-WebUI.click(CouncilTestObject)
+'Apply item selected'
+WebUI.click(findTestObject('Object Repository/Page_search/button_Apply'))
 
-'click on Lending type dropdown'
-LendingItemDropdown = driver.findElement(By.xpath('//*[@id="downshift-2-item-3"]'))
 
-LendingTestObject = WebUI.convertWebElementToTestObject(LendingItemDropdown)
-
-WebUI.click(LendingTestObject)
-
-'click on Apply'
-Applybutton = driver.findElement(By.cssSelector('.custom-select__button.btn.btn--primary.btn--sm'))
-
-ApplyButtonTestObject = WebUI.convertWebElementToTestObject(Applybutton)
-
-WebUI.click(ApplyButtonTestObject)
-
-'verify display of lending button'
+'verify display of lending button active facet'
 
 WebUI.delay(4) 
 
-ActiveFacetElements = driver.findElement(By.id("search-facets"))
-
-ActiveFacetsObject = WebUI.convertWebElementToTestObject(ActiveFacetElements)
-
-ActiveFacetsObjectText = WebUI.getText(ActiveFacetsObject)
+ActiveFacetsObjectText = WebUI.getText(findTestObject('Page_search/Active_Facets_Bar'))
 
 println(ActiveFacetsObjectText)
 
@@ -75,11 +60,8 @@ if (!(ActiveFacetsObjectText.contains('Lending'))) {
 
 
 'Clear the filters selected'
-ClearFilterElement = driver.findElement(By.xpath('//*[@id="search-facets"]/div[2]/button[2]'))
 
-ClearFilterObject = WebUI.convertWebElementToTestObject(ClearFilterElement)
-
-WebUI.click(ClearFilterObject)
+WebUI.click(findTestObject('Object Repository/Page_search/button_clear filters'))
 
 
 'Verify Active Facets labels are not visible'

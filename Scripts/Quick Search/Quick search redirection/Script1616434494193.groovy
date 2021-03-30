@@ -44,9 +44,19 @@ WebUI.setText(findTestObject('Object Repository/Page_CUNA Councils/input_Enter s
 
 WebUI.click(findTestObject('Object Repository/Page_CUNA Councils/svg_Enter search term_icon icon--search'))
 
+'verify URL'
+
 url=WebUI.getUrl()
 
 WebUI.verifyEqual(url, 'https://cuna-stage.adobemsbasic.com/content/cuna/councils/search.html?q=community%20tour', FailureHandling.STOP_ON_FAILURE)
+
+'Verify text on Search Bar'
+
+KeywordSearchBarText = WebUI.getAttribute(findTestObject('Object Repository/Page_search/Search_Bar'), "value")
+
+println(KeywordSearchBarText)
+
+WebUI.verifyMatch('community tour', KeywordSearchBarText, false)
 
 WebUI.closeBrowser()
 

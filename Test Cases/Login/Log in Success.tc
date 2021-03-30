@@ -3,6 +3,16 @@
    <description></description>
    <name>Log in Success</name>
    <tag></tag>
+   <integratedEntity>
+      <productName>com.katalon.plugin.testrail.TestRailIntegration</productName>
+      <properties>
+         <entry>
+            <key>testRail.testcase.id</key>
+            <value>403568</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
    <comment></comment>
    <testCaseGuid>c98a7239-843f-4e90-8608-21d9111dd411</testCaseGuid>
 </TestCaseEntity>

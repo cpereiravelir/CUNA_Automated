@@ -1,82 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>img</name>
+   <name>Search Results Region</name>
    <tag></tag>
-   <elementGuidId>8161ed73-f026-456f-bf7b-f30bff87872b</elementGuidId>
+   <elementGuidId>47d444dd-32d6-4bbb-8f2e-2c706c031419</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//img[@alt='Cuna Logo']</value>
+         <value>//body[@id='search-f3a80d2db4']/div/div/div/div[2]/div[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>img[alt=&quot;Cuna Logo&quot;]</value>
+         <value>div.search__results</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>img</value>
+      <value>div</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>src</name>
+      <name>class</name>
       <type>Main</type>
-      <value>/content/dam/cuna-councils/logos/CUNA-Councils_280x106.jpg</value>
+      <value>search__results</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>alt</name>
+      <name>aria-label</name>
       <type>Main</type>
-      <value>Cuna Logo</value>
+      <value>Search Results</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>width</name>
+      <name>role</name>
       <type>Main</type>
-      <value>100%</value>
+      <value>region</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>height</name>
+      <name>text</name>
       <type>Main</type>
-      <value>100%</value>
+      <value>Showing 1 - 4 of 4 ResultsCommunity TourEvent Date: April 5, 2021Councils Community + File Library TourPublished Date: 02/02/2021Councils CommunityCUNA Councils Community is our online communications platform that allows members to network, discuss important issues and work together to solve the greatest problems in their fields.Published Date: 09/24/2020Councils Community + File Library TourPublished Date: 09/17/2020</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;eventssearch-b836e2c9da&quot;)/header[@class=&quot;js-global-header global-header&quot;]/div[@class=&quot;global-header__container&quot;]/a[@class=&quot;global-header__logo&quot;]/img[1]</value>
+      <value>id(&quot;search-f3a80d2db4&quot;)/div[1]/div[@class=&quot;js-search-mount&quot;]/div[@class=&quot;search&quot;]/div[@class=&quot;search__content&quot;]/div[@class=&quot;search__results&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//body[@id='eventssearch-b836e2c9da']/header/div/a/img</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:img</name>
-      <type>Main</type>
-      <value>//img[@alt='Cuna Logo']</value>
+      <value>//body[@id='search-f3a80d2db4']/div/div/div/div[2]/div[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//img</value>
+      <value>//div[2]/div[2]</value>
    </webElementXpaths>
 </WebElementEntity>
