@@ -37,17 +37,10 @@ WebDriver driver = DriverFactory.getWebDriver()
 WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils/membership/membership-benefits/cuna-cuna-operations---member-experience-council-benefits-of-mem.html')
 
 WebUI.setViewPortSize(1200, 1020)
-/*
-'Click on lending tab'
-TestObject LendingObject = findTestObject('Object Repository/Page_CUNA Lending Council Benefits of Membership/a_Lending')
 
-WebUI.click(LendingObject)
+'Verify Element is present'
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_CUNA Marketing  Business Development Council Benefits of Membership/div_tab_nav'), 10)
 
-'Verify active class'
-ParentCSS = WebUI.getAttribute(findTestObject('Object Repository/Page_CUNA Lending Council Benefits of Membership/li_Lending'), 'class')
-
-WebUI.verifyMatch(ParentCSS, 'tab-navigation__tab tab-navigation__tab--active', false, FailureHandling.STOP_ON_FAILURE)
-*/
 'Verify links accessible'
 List TabLinks = CustomKeywords.'velir.utilities.GetLinksFromSection'(findTestObject('Object Repository/Page_CUNA Marketing  Business Development Council Benefits of Membership/div_tab_nav'))
 

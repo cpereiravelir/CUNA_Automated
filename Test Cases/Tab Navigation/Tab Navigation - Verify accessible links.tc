@@ -3,6 +3,16 @@
    <description></description>
    <name>Tab Navigation - Verify accessible links</name>
    <tag></tag>
+   <integratedEntity>
+      <productName>com.katalon.plugin.testrail.TestRailIntegration</productName>
+      <properties>
+         <entry>
+            <key>testRail.testcase.id</key>
+            <value>404061</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
    <comment></comment>
    <testCaseGuid>97667659-c0b0-406b-97d4-9cb36f9ce1bb</testCaseGuid>
 </TestCaseEntity>

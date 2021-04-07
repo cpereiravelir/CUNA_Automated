@@ -83,16 +83,6 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Single Sign O
 /*
 WebUI.delay(10)
 
-'verify validation'
 
-ValidationElement = driver.findElement(By.id("MainValidationSummary"))
-
-ValidationObject = WebUI.convertWebElementToTestObject(ValidationElement)
-println( WebUI.getText(ValidationObject))
-
-if (!( WebUI.getText(ValidationObject).contains('Please enter a valid email address/password'))) {
-	KeywordUtil.markFailedAndStop('Not validation, the test failed!')
-}
-*/
 WebUI.closeBrowser()
 
