@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_ABOUT</name>
+   <name>a_Marketing  Business Development</name>
    <tag></tag>
-   <elementGuidId>e3261678-0dd8-42b7-8bf1-6d84d4ac4cda</elementGuidId>
+   <elementGuidId>0c73a63a-3412-401e-9985-153942f7bc5b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
          <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>id(&quot;standardpage-1243155342&quot;)/header[@class=&quot;js-global-header global-header&quot;]/nav[@class=&quot;global-header__primary-nav js-primary-nav&quot;]/div[@class=&quot;primary-nav__menu-wrap container&quot;]/ul[@class=&quot;primary-nav__menu&quot;]/li[@class=&quot;primary-nav__item js-nav-item has-submenu js-has-submenu&quot;]/ul[@class=&quot;primary-nav__submenu js-submenu&quot;]/li[@class=&quot;primary-nav__subitem&quot;]/a[1][count(. | //*[@href = '/content/cuna/councils/about.html' and (text() = 'ABOUT' or . = 'ABOUT')]) = count(//*[@href = '/content/cuna/councils/about.html' and (text() = 'ABOUT' or . = 'ABOUT')])]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//body[@id='standardpage-1243155342']/header/nav/div/ul/li[7]/ul/li/a</value>
+         <value>//body[@id='standardpage-91324fa787']/tabnav/div/div/ol/li[3]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,94 +24,101 @@
       <value>a</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>href</name>
+      <name>class</name>
       <type>Main</type>
-      <value>/content/cuna/councils/about.html</value>
+      <value>tab-navigation__tab-link</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tabindex</name>
       <type>Main</type>
-      <value>-1</value>
+      <value>0</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/content/cuna/councils/membership/membership-benefits/cuna-marketing---business-development-council-benefits-of-member.html</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>ABOUT</value>
+      <value> Marketing &amp; Business Development</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;standardpage-1243155342&quot;)/header[@class=&quot;js-global-header global-header&quot;]/nav[@class=&quot;global-header__primary-nav js-primary-nav&quot;]/div[@class=&quot;primary-nav__menu-wrap container&quot;]/ul[@class=&quot;primary-nav__menu&quot;]/li[@class=&quot;primary-nav__item js-nav-item has-submenu js-has-submenu&quot;]/ul[@class=&quot;primary-nav__submenu js-submenu&quot;]/li[@class=&quot;primary-nav__subitem&quot;]/a[1]</value>
+      <value>id(&quot;standardpage-91324fa787&quot;)/tabnav[1]/div[@class=&quot;tab-navigation&quot;]/div[@class=&quot;tab-navigation__wrapper&quot;]/ol[@class=&quot;tab-navigation__tablist js-tab-nav&quot;]/li[@class=&quot;tab-navigation__tab&quot;]/a[@class=&quot;tab-navigation__tab-link&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//body[@id='standardpage-1243155342']/header/nav/div/ul/li[7]/ul/li/a</value>
+      <value>//body[@id='standardpage-91324fa787']/tabnav/div/div/ol/li[3]/a</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
       <type>Main</type>
-      <value>//a[contains(text(),'ABOUT')]</value>
+      <value>//a[contains(text(),'Marketing &amp; Business Development')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='About'])[1]/following::a[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lending'])[2]/following::a[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sponsorship Opportunities'])[1]/following::a[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Operations &amp; Member Experience'])[1]/following::a[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Committee Structure'])[1]/preceding::a[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Technology'])[1]/preceding::a[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Contact Us'])[1]/preceding::a[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Finance'])[1]/preceding::a[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='ABOUT']/parent::*</value>
+      <value>//*/text()[normalize-space(.)='Marketing &amp; Business Development']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>//a[contains(@href, '/content/cuna/councils/about.html')]</value>
+      <value>//a[contains(@href, '/content/cuna/councils/membership/membership-benefits/cuna-marketing---business-development-council-benefits-of-member.html')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li[7]/ul/li/a</value>
+      <value>//div/ol/li[3]/a</value>
    </webElementXpaths>
 </WebElementEntity>

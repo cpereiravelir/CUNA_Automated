@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Awards  Scholarships</name>
+   <name>button_Member benefits</name>
    <tag></tag>
-   <elementGuidId>9cb6f65f-e144-4506-8170-482e9c722ca4</elementGuidId>
+   <elementGuidId>4f7337ce-00cf-48bd-9c10-572b7b64b00c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#primary-nav-2</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>id(&quot;primary-nav-2&quot;)[count(. | //*[@id = 'primary-nav-2']) = count(//*[@id = 'primary-nav-2'])]</value>
+         <value>#accordion-75b05b1260-item-b45bbad8ad-button</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[@id='primary-nav-2']</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='benefits of CUNA Council membership'])[1]/preceding::button[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -25,88 +21,102 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>accordion-75b05b1260-item-b45bbad8ad-button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>class</name>
       <type>Main</type>
-      <value>primary-nav-2</value>
+      <value>cmp-accordion__button cmp-accordion__button--expanded</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-controls</name>
+      <type>Main</type>
+      <value>accordion-75b05b1260-item-b45bbad8ad-panel</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-cmp-hook-accordion</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-expanded</name>
+      <type>Main</type>
+      <value>true</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value>
-              Awards &amp; Scholarships
-              
-                
-              
-            </value>
+      
+        Member benefits
+        
+          
+            
+          
+          
+            
+          
+        
+      
+    </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;primary-nav-2&quot;)</value>
+      <value>id(&quot;accordion-75b05b1260-item-b45bbad8ad-button&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//span[@id='primary-nav-2']</value>
+      <value>//button[@id='accordion-75b05b1260-item-b45bbad8ad-button']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//body[@id='eventssearch-b836e2c9da']/header/nav/div/ul/li[3]/span</value>
+      <value>//div[@id='accordion-75b05b1260-item-b45bbad8ad']/button</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Speaker Proposal'])[1]/following::span[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CUNA Marketing &amp; Business Development Council'])[1]/following::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Chats'])[1]/following::span[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='AWARDS &amp; SCHOLARSHIPS'])[1]/preceding::span[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Awards Programs'])[1]/preceding::span[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Awards &amp; Scholarships']/parent::*</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='benefits of CUNA Council membership'])[1]/preceding::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li[3]/span</value>
+      <value>//div[2]/div/div/button</value>
    </webElementXpaths>
 </WebElementEntity>

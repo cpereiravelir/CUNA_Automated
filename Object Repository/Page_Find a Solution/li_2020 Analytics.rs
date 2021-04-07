@@ -1,112 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Awards  Scholarships</name>
+   <name>li_2020 Analytics</name>
    <tag></tag>
-   <elementGuidId>9cb6f65f-e144-4506-8170-482e9c722ca4</elementGuidId>
+   <elementGuidId>fb770356-6d23-41bc-a300-8df5df5c7663</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//li[@id='alliance-provider__menu-item--0']</value>
+      </entry>
+      <entry>
          <key>CSS</key>
-         <value>#primary-nav-2</value>
+         <value>#alliance-provider__menu-item--0</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>id(&quot;primary-nav-2&quot;)[count(. | //*[@id = 'primary-nav-2']) = count(//*[@id = 'primary-nav-2'])]</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//span[@id='primary-nav-2']</value>
+         <value>id(&quot;alliance-provider__menu-item--0&quot;)[count(. | //*[@id = 'alliance-provider__menu-item--0']) = count(//*[@id = 'alliance-provider__menu-item--0'])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
+      <value>li</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>custom-select__item is-highlighted</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>option</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-selected</name>
+      <type>Main</type>
+      <value>true</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>primary-nav-2</value>
+      <value>alliance-provider__menu-item--0</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>
-              Awards &amp; Scholarships
-              
-                
-              
-            </value>
+      <value> 2020 Analytics</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;primary-nav-2&quot;)</value>
+      <value>id(&quot;alliance-provider__menu-item--0&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//span[@id='primary-nav-2']</value>
+      <value>//li[@id='alliance-provider__menu-item--0']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//body[@id='eventssearch-b836e2c9da']/header/nav/div/ul/li[3]/span</value>
+      <value>//ul[@id='alliance-provider__menu']/li</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Speaker Proposal'])[1]/following::span[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Skip to search results'])[1]/following::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Chats'])[1]/following::span[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='AWARDS &amp; SCHOLARSHIPS'])[1]/preceding::span[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Awards Programs'])[1]/preceding::span[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Awards &amp; Scholarships']/parent::*</value>
+      <value>//*/text()[normalize-space(.)='2020 Analytics']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li[3]/span</value>
+      <value>//div[2]/div/div/ul/li</value>
    </webElementXpaths>
 </WebElementEntity>

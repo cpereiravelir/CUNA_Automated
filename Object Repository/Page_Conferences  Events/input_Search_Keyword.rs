@@ -1,72 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>svg_Search_icon icon--search</name>
+   <name>input_Search_Keyword</name>
    <tag></tag>
-   <elementGuidId>7ea29419-6433-485a-9982-82b36edf6c1e</elementGuidId>
+   <elementGuidId>4a1f33c5-73e9-4023-8f70-ced5f26fb79b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>div.search__input > button.search-btn > svg.icon.icon--search</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>id(&quot;searchPageKeywordLabel&quot;)/div[@class=&quot;search__input&quot;]/button[@class=&quot;search-btn&quot;]/svg[@class=&quot;icon icon--search&quot;]</value>
+         <value>#searchPageKeyword</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]//*[name()='svg'][1]</value>
+         <value>//input[@id='searchPageKeyword']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>svg</value>
+      <value>input</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>tabindex</name>
+      <name>aria-labelledby</name>
       <type>Main</type>
-      <value>-1</value>
+      <value>searchPageKeywordLabel</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>searchPageKeyword</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>type</name>
       <type>Main</type>
-      <value>icon icon--search</value>
+      <value>text</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Enter search term</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;searchPageKeywordLabel&quot;)/div[@class=&quot;search__input&quot;]/button[@class=&quot;search-btn&quot;]/svg[@class=&quot;icon icon--search&quot;]</value>
+      <value>id(&quot;searchPageKeyword&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
+      <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]//*[name()='svg'][1]</value>
+      <value>//input[@id='searchPageKeyword']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
+      <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Resources'])[4]/following::*[name()='svg'][1]</value>
+      <value>//label[@id='searchPageKeywordLabel']/div/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
+      <name>xpath:position</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Skip to search results'])[1]/preceding::*[name()='svg'][1]</value>
+      <value>//div/input</value>
    </webElementXpaths>
 </WebElementEntity>

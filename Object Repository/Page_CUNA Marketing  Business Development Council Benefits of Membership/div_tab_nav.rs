@@ -1,79 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Apply</name>
+   <name>div_tab_nav</name>
    <tag></tag>
-   <elementGuidId>519402b4-fc1c-4183-bb61-6f1eb43a2c32</elementGuidId>
+   <elementGuidId>b95f3aaa-3673-4f63-9184-73ee101d98ad</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//ul[@id='downshift-22-menu']/div/button</value>
-      </entry>
-      <entry>
          <key>CSS</key>
-         <value>button.custom-select__button.btn.btn--primary.btn--sm</value>
+         <value>div.tab-navigation__wrapper</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@class = 'custom-select__button btn btn--primary btn--sm']</value>
+         <key>XPATH</key>
+         <value>//body[@id='standardpage-42d4d873f2']/tabnav/div/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>button</value>
+      <value>div</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>custom-select__button btn btn--primary btn--sm</value>
+      <value>tab-navigation__wrapper</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Apply</value>
+      <value>
+    
+      
+      
+        Operations &amp; Member Experience
+      
+    
+      
+      
+        Lending
+      
+    
+      
+      
+         Marketing &amp; Business Development
+      
+    
+      
+      
+        Technology 
+      
+    
+      
+      
+        Finance
+      
+    
+      
+      
+        Compliance &amp; Risk
+      
+    
+      
+      
+        HR &amp; Organizational Development
+      
+    
+      
+      
+        CEO
+      
+    
+  </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;downshift-22-menu&quot;)/div[@class=&quot;custom-select__button-group&quot;]/button[@class=&quot;custom-select__button btn btn--primary btn--sm&quot;]</value>
+      <value>id(&quot;standardpage-42d4d873f2&quot;)/tabnav[1]/div[@class=&quot;tab-navigation&quot;]/div[@class=&quot;tab-navigation__wrapper&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//ul[@id='downshift-22-menu']/div/button</value>
+      <value>//body[@id='standardpage-42d4d873f2']/tabnav/div/div</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='cancel'])[1]/preceding::button[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Marketing &amp; Business Development'])[1]/following::div[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Apply']/parent::*</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Benefits of Membership'])[3]/following::div[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul/div/button</value>
+      <value>//tabnav/div/div</value>
    </webElementXpaths>
 </WebElementEntity>

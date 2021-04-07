@@ -34,46 +34,18 @@ WebUI.openBrowser('')
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils.html')
+WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils/membership/membership-benefits/cuna-cuna-operations---member-experience-council-benefits-of-mem.html')
 
-//WebUI.maximizeWindow()
 WebUI.setViewPortSize(1200, 1020)
 
-'Verify mouse over on Conference Primary Nav item'
-WebUI.mouseOver(findTestObject('Object Repository/Page_CUNA Councils/span_Conferences  Events'))
+WebUI.click(findTestObject('Object Repository/Page_CUNA Marketing  Business Development Council Benefits of Membership/button_Member benefits'))
 
-WebUI.delay(2)
+WebUI.waitForElementAttributeValue(findTestObject('Object Repository/Page_CUNA Marketing  Business Development Council Benefits of Membership/button_Member benefits'), 'aria-expanded', 'true', 20, FailureHandling.STOP_ON_FAILURE)
 
-'Verify mouse over on Conference Submenu item'
-WebUI.mouseOver(findTestObject('Object Repository/Page_CUNA Councils/a_Conferences'))
+WebUI.waitForElementAttributeValue(findTestObject('Object Repository/Page_CUNA Marketing  Business Development Council Benefits of Membership/button_Membership eligibility'), 'aria-expanded', 'false', 20, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(1)
+WebUI.click(findTestObject('Object Repository/Page_CUNA Marketing  Business Development Council Benefits of Membership/button_Membership eligibility'))
 
-WebUI.click(findTestObject('Object Repository/Page_CUNA Councils/a_Conferences'))
-
-'Verify mouse over on Awards Scholarships Primary nav item'
-WebUI.mouseOver(findTestObject('Object Repository/Page_Conferences  Events/span_Awards  Scholarships'))
-
-WebUI.delay(2)
-
-'Verify mouse over on Awards Programs Submenu item'
-WebUI.mouseOver(findTestObject('Object Repository/Page_Conferences  Events/a_Awards Programs'))
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('Object Repository/Page_Conferences  Events/a_Awards Programs'))
-
-'Verify mouse over on About Primary Nav item'
-WebUI.mouseOver(findTestObject('Object Repository/Page_Operations  Member Experience Council Awards Programs/span_About'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Object Repository/Page_Operations  Member Experience Council Awards Programs/a_ABOUT'))
-
-'Verify Links accessible'
-List PrimaryNavLinks = CustomKeywords.'velir.utilities.GetLinksFromSection'(findTestObject('Object Repository/Page_CUNA Councils/Primary_Nav_Menu'))
-
-WebUI.verifyLinksAccessible(PrimaryNavLinks, FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementAttributeValue(findTestObject('Object Repository/Page_CUNA Marketing  Business Development Council Benefits of Membership/button_Membership eligibility'), 'aria-expanded', 'true', 20, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
-

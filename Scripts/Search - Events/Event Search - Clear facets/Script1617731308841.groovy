@@ -30,69 +30,54 @@ import org.openqa.selenium.WebElement
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+
 WebUI.openBrowser('')
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils/toolssearch.html')
+WebUI.navigateToUrl('https://cuna-dev.adobemsbasic.com/content/cuna/councils/conferences---events0.html')
+//WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils/conferences---events0.html')
 
 //WebUI.maximizeWindow()
 WebUI.setViewPortSize(1200, 1020)
 
 'Verify Search Bar functionality'
-WebUI.setText(findTestObject('Object Repository/Page_Resources/input_Search_searchPageKeyword'), 'Diamond Award')
+WebUI.setText(findTestObject('Object Repository/Page_Conferences  Events/input_Search_Keyword'), 'Investment')
 
-WebUI.sendKeys(findTestObject('Object Repository/Page_Resources/input_Search_searchPageKeyword'), Keys.chord(Keys.ENTER))
+WebUI.click(findTestObject('Object Repository/Page_Conferences  Events/button_Search_search-btn'))
 
-//WebUI.click(findTestObject('Object Repository/Page_Resources/svg_Search_icon icon--search'))
+'Select a facet'
 
-'verify more than 1 results'
+WebUI.click(findTestObject('Object Repository/Page_Conferences  Events/button_Event Type'))
 
-ResultsLabelElement = driver.findElement(By.cssSelector('.search__results-text'))
- 
- NumberResultsLabelObject = WebUI.convertWebElementToTestObject(ResultsLabelElement)
- 
- NumberOfResults = WebUI.getText(NumberResultsLabelObject).replaceAll('\\n|\\r', '')
- 
- //Gets Number + Result ex: 10 Results
- Pattern regexResults = Pattern.compile('\\d+ Results')
- 
- Matcher MatchNumberResults = regexResults.matcher(NumberOfResults)
- 
- if (MatchNumberResults.find()) {
-	 expectedLabelResutl = MatchNumberResults.group()
- //Getting just the number
-	 Pattern regexNumber = Pattern.compile('\\d+')
- 
-	 Matcher matchNumber = regexNumber.matcher(expectedLabelResutl)
- 
-	 if (matchNumber.find()) {
-		 TotalResults = matchNumber.group()
- 
-		 println(TotalResults)
- //comparing with >=1
-		 WebUI.verifyGreaterThanOrEqual(TotalResults, 1, FailureHandling.STOP_ON_FAILURE)
-	 }
- }
- 
+WebUI.click(findTestObject('Object Repository/Page_Conferences  Events/li_eSchool'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Object Repository/Page_Conferences  Events/button_Apply'))
 
-WebUI.click(findTestObject('null'))
+'verify display of eschool button active facet'
 
-WebUI.click(findTestObject('Object Repository/Page_Resources/button_Apply'))
+WebUI.delay(4)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Resources/h2_Sorry, no results were found for your search'), 
-    0)
+ActiveFacetsObjectText = WebUI.getText(findTestObject('Object Repository/Page_Conferences  Events/div_active_facets'))
 
-WebUI.click(findTestObject('Object Repository/Page_Resources/button_clear filters'))
+println(ActiveFacetsObjectText)
 
-WebUI.click(findTestObject('Object Repository/Page_Resources/p_Content Type'))
+if (!(ActiveFacetsObjectText.contains('eSchool'))) {
+	KeywordUtil.markFailedAndStop('eSchool is not visible, so the test is failed!')
+}
 
-WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Page_Resources/button_Apply'))
+'Clear the filters selected'
 
-WebUI.verifyElementPresent(findTestObject('null'), 
-    0)
+WebUI.click(findTestObject('Object Repository/Page_Conferences  Events/button_clear filters'))
 
+
+'Verify Active Facets labels are not visible'
+ActiveFacetsElements2 = driver.findElements(By.cssSelector('.active-facets.is-visible'))
+
+if (ActiveFacetsElements2.size() > 0) {
+
+	KeywordUtil.markFailedAndStop('Active Facets are visible, test failed.')
+}
+
+WebUI.closeBrowser()

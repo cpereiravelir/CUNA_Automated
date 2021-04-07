@@ -1,93 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Magnifying_Glass_Button_Quick_Search</name>
+   <name>span_About</name>
    <tag></tag>
-   <elementGuidId>44898fb8-49c8-47de-887a-ae1e53f59e86</elementGuidId>
+   <elementGuidId>51fcfe9c-69df-448e-943d-97a123795b0e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>button.global-header__search-btn.search-btn</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>id(&quot;homepage-b0ac2b38ec&quot;)/header[@class=&quot;js-global-header global-header&quot;]/div[@class=&quot;global-header__container&quot;]/div[@class=&quot;global-header__auxiliary-nav&quot;]/form[@class=&quot;global-header__search js-quick-search&quot;]/button[@class=&quot;global-header__search-btn search-btn&quot;][count(. | //*[@class = 'global-header__search-btn search-btn']) = count(//*[@class = 'global-header__search-btn search-btn'])]</value>
+         <value>#primary-nav-6</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body[@id='homepage-b0ac2b38ec']/header/div/div/form/button</value>
+         <value>//span[@id='primary-nav-6']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>button</value>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>primary-nav-6</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>text</name>
       <type>Main</type>
-      <value>global-header__search-btn search-btn</value>
+      <value>
+              About
+              
+                
+              
+            </value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>aria-label</name>
-      <type>Main</type>
-      <value>submit</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;homepage-b0ac2b38ec&quot;)/header[@class=&quot;js-global-header global-header&quot;]/div[@class=&quot;global-header__container&quot;]/div[@class=&quot;global-header__auxiliary-nav&quot;]/form[@class=&quot;global-header__search js-quick-search&quot;]/button[@class=&quot;global-header__search-btn search-btn&quot;]</value>
+      <value>id(&quot;primary-nav-6&quot;)</value>
    </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//span[@id='primary-nav-6']</value>
+   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//body[@id='homepage-b0ac2b38ec']/header/div/div/form/button</value>
+      <value>//body[@id='standardpage-1243155342']/header/nav/div/ul/li[7]/span</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Enter search term'])[1]/following::button[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sponsorship Opportunities'])[1]/following::span[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Skip to main content'])[1]/following::button[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SPONSORSHIP'])[1]/following::span[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='kai.rasmussen@velir.com'])[1]/preceding::button[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ABOUT'])[1]/preceding::span[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Account'])[1]/preceding::button[3]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Committee Structure'])[1]/preceding::span[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='About']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//button</value>
+      <value>//li[7]/span</value>
    </webElementXpaths>
 </WebElementEntity>

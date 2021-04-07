@@ -3,22 +3,18 @@
    <description></description>
    <name>a_ABOUT</name>
    <tag></tag>
-   <elementGuidId>e3261678-0dd8-42b7-8bf1-6d84d4ac4cda</elementGuidId>
+   <elementGuidId>4fa3604b-d5e4-48e0-aab6-102f4f686c87</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
          <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>id(&quot;standardpage-1243155342&quot;)/header[@class=&quot;js-global-header global-header&quot;]/nav[@class=&quot;global-header__primary-nav js-primary-nav&quot;]/div[@class=&quot;primary-nav__menu-wrap container&quot;]/ul[@class=&quot;primary-nav__menu&quot;]/li[@class=&quot;primary-nav__item js-nav-item has-submenu js-has-submenu&quot;]/ul[@class=&quot;primary-nav__submenu js-submenu&quot;]/li[@class=&quot;primary-nav__subitem&quot;]/a[1][count(. | //*[@href = '/content/cuna/councils/about.html' and (text() = 'ABOUT' or . = 'ABOUT')]) = count(//*[@href = '/content/cuna/councils/about.html' and (text() = 'ABOUT' or . = 'ABOUT')])]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//body[@id='standardpage-1243155342']/header/nav/div/ul/li[7]/ul/li/a</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

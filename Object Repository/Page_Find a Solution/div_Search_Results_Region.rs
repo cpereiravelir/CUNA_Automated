@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Search_Results_Region</name>
+   <tag></tag>
+   <elementGuidId>03fc9a2e-1f4a-4604-b4ac-3a403e51101f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.search__results.search__results--solutions</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//body[@id='solutionsearch-2a0531f2b2']/div/div/div/div[2]/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>search__results search__results--solutions</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>Search Results</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>region</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Showing 1 - 12 of 60 ResultsFinance, OperationsVendor contract negotiationsJohn M. Floyd &amp; AssociatesOffers a free expert analysis of your current contracts to uncover savings opportunities and improve service levels.John M. Floyd &amp; AssociatesCompliance, Growth &amp; RetentionComprehensive overdraft consultingJohn M. Floyd &amp; AssociatesJMFA’s overdraft program is a top-of-the-market solution for credit unions. John M. Floyd &amp; AssociatesGrowth &amp; Retention, Operations, TechnologyText Messaging ServiceEltropyThe Eltropy platform allows credit unions to communicate with their members using text messaging and timely, relevant content. EltropyGrowth &amp; RetentionData StorageNewtek Business Services CorpFast, secure, off-site data backup, storage and retrieval systems designed to meet specific regulatory and compliance needs of the credit un...Newtek Business Services CorpLendingBusiness lending Newtek Business Services CorpNewtek provides SBA-guaranteed small business loans, accounts receivable financing and commercial real estate financing.Newtek Business Services CorpGrowth &amp; RetentionHealth and Benefit InsuranceNewtek Business Services CorpBy working through Newtek Insurance Agency, you can offer your credit union small business members access to health and benefit insurance. Newtek Business Services CorpGrowth &amp; RetentionPayroll servicesNewtek Business Services CorpNewtek offers payroll services that are safe, sophisticated, and completely online. These payroll services are for small businesses, whether t...Newtek Business Services CorpOperations, TechnologyWebsite design, development and hostingNewtek Business Services CorpNewtek is in the unique position to offer small and medium-sized businesses a comprehensive and effective web presence. Newtek Business Services CorpGrowth &amp; RetentionMerchant processingNewtek Business Services CorpNewtek offers small businesses convenient credit and debit card processing. Newtek Business Services CorpLendingBranch cash advance programNewtek Business Services CorpNewtek provides your credit union with an easy way to offer cash advances at your branch locations. Newtek Business Services CorpCompliance, Lending, Data Analytics, FinanceConsumer loan portfolio risk analysis and collateral valuation2020 AnalyticsUnderstand your portfolio behavior and risk with advanced analytics.2020 AnalyticsCompliance, Lending, Data Analytics, FinancePeer Analytics2020 AnalyticsSee how your credit union stacks up to similar institutions in terms of portfolio, interest rates and more.2020 Analytics</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;solutionsearch-2a0531f2b2&quot;)/div[1]/div[@class=&quot;js-search-mount&quot;]/div[@class=&quot;search&quot;]/div[@class=&quot;search__content&quot;]/div[@class=&quot;search__results search__results--solutions&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//body[@id='solutionsearch-2a0531f2b2']/div/div/div/div[2]/div[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]</value>
+   </webElementXpaths>
+</WebElementEntity>

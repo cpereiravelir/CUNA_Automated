@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Magnifying_Glass_Button_Quick_Search</name>
+   <name>button_Search_search-btn</name>
    <tag></tag>
-   <elementGuidId>44898fb8-49c8-47de-887a-ae1e53f59e86</elementGuidId>
+   <elementGuidId>cf658ac7-d32d-4273-87d0-20c0cfe002f2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>button.global-header__search-btn.search-btn</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>id(&quot;homepage-b0ac2b38ec&quot;)/header[@class=&quot;js-global-header global-header&quot;]/div[@class=&quot;global-header__container&quot;]/div[@class=&quot;global-header__auxiliary-nav&quot;]/form[@class=&quot;global-header__search js-quick-search&quot;]/button[@class=&quot;global-header__search-btn search-btn&quot;][count(. | //*[@class = 'global-header__search-btn search-btn']) = count(//*[@class = 'global-header__search-btn search-btn'])]</value>
+         <value>div.search__input > button.search-btn</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body[@id='homepage-b0ac2b38ec']/header/div/div/form/button</value>
+         <value>//button[@type='submit']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -28,11 +24,18 @@
       <value>button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>global-header__search-btn search-btn</value>
+      <value>search-btn</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>submit</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,52 +45,52 @@
       <value>submit</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;homepage-b0ac2b38ec&quot;)/header[@class=&quot;js-global-header global-header&quot;]/div[@class=&quot;global-header__container&quot;]/div[@class=&quot;global-header__auxiliary-nav&quot;]/form[@class=&quot;global-header__search js-quick-search&quot;]/button[@class=&quot;global-header__search-btn search-btn&quot;]</value>
+      <value>id(&quot;searchPageKeywordLabel&quot;)/div[@class=&quot;search__input&quot;]/button[@class=&quot;search-btn&quot;]</value>
    </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@type='submit']</value>
+   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//body[@id='homepage-b0ac2b38ec']/header/div/div/form/button</value>
+      <value>//label[@id='searchPageKeywordLabel']/div/button</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Enter search term'])[1]/following::button[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]//button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Skip to main content'])[1]/following::button[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Browse Solutions'])[1]/following::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='kai.rasmussen@velir.com'])[1]/preceding::button[2]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Account'])[1]/preceding::button[3]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Skip to search results'])[1]/preceding::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//button</value>
+      <value>//label/div/button</value>
    </webElementXpaths>
 </WebElementEntity>

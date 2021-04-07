@@ -34,46 +34,56 @@ WebUI.openBrowser('')
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils.html')
+WebUI.navigateToUrl('https://cuna-dev.adobemsbasic.com/content/cuna/councils/conferences---events0.html')
+//WebUI.navigateToUrl('https://cuna-stage.adobemsbasic.com/content/cuna/councils/conferences---events0.html')
 
 //WebUI.maximizeWindow()
 WebUI.setViewPortSize(1200, 1020)
 
-'Verify mouse over on Conference Primary Nav item'
-WebUI.mouseOver(findTestObject('Object Repository/Page_CUNA Councils/span_Conferences  Events'))
+'Verify Search Bar functionality'
+WebUI.setText(findTestObject('Object Repository/Page_Conferences  Events/input_Search_Keyword'), 'Investment')
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Object Repository/Page_Conferences  Events/button_Search_search-btn'))
 
-'Verify mouse over on Conference Submenu item'
-WebUI.mouseOver(findTestObject('Object Repository/Page_CUNA Councils/a_Conferences'))
 
-WebUI.delay(1)
+'verify more than 1 results'
 
-WebUI.click(findTestObject('Object Repository/Page_CUNA Councils/a_Conferences'))
+ResultsLabelElement = driver.findElement(By.xpath('//*[@id="eventssearch-b836e2c9da"]/div[2]/div/div/div[2]/div[2]/p'))
+ 
+ NumberResultsLabelObject = WebUI.convertWebElementToTestObject(ResultsLabelElement)
+ 
+ NumberOfResults = WebUI.getText(NumberResultsLabelObject).replaceAll('\\n|\\r', '')
+ 
+ //Gets Number + Result ex: 10 Results
+ Pattern regexResults = Pattern.compile('\\d+ Results')
+ 
+ Matcher MatchNumberResults = regexResults.matcher(NumberOfResults)
+ 
+ if (MatchNumberResults.find()) {
+	 expectedLabelResutl = MatchNumberResults.group()
+ //Getting just the number
+	 Pattern regexNumber = Pattern.compile('\\d+')
+ 
+	 Matcher matchNumber = regexNumber.matcher(expectedLabelResutl)
+ 
+	 if (matchNumber.find()) {
+		 TotalResults = matchNumber.group()
+ 
+		 println(TotalResults)
+ //comparing with >=1
+		 WebUI.verifyGreaterThanOrEqual(TotalResults, 1, FailureHandling.STOP_ON_FAILURE)
+	 }
+ }
+ 
+ 'Select a facet'
+ 
+ WebUI.click(findTestObject('Object Repository/Page_Conferences  Events/button_Event Type'))
+ 
+ WebUI.click(findTestObject('Object Repository/Page_Conferences  Events/li_eSchool'))
+ 
+ WebUI.click(findTestObject('Object Repository/Page_Conferences  Events/button_Apply'))
 
-'Verify mouse over on Awards Scholarships Primary nav item'
-WebUI.mouseOver(findTestObject('Object Repository/Page_Conferences  Events/span_Awards  Scholarships'))
-
-WebUI.delay(2)
-
-'Verify mouse over on Awards Programs Submenu item'
-WebUI.mouseOver(findTestObject('Object Repository/Page_Conferences  Events/a_Awards Programs'))
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('Object Repository/Page_Conferences  Events/a_Awards Programs'))
-
-'Verify mouse over on About Primary Nav item'
-WebUI.mouseOver(findTestObject('Object Repository/Page_Operations  Member Experience Council Awards Programs/span_About'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Object Repository/Page_Operations  Member Experience Council Awards Programs/a_ABOUT'))
-
-'Verify Links accessible'
-List PrimaryNavLinks = CustomKeywords.'velir.utilities.GetLinksFromSection'(findTestObject('Object Repository/Page_CUNA Councils/Primary_Nav_Menu'))
-
-WebUI.verifyLinksAccessible(PrimaryNavLinks, FailureHandling.STOP_ON_FAILURE)
+List ResourceSearchResultLinks = CustomKeywords.'velir.utilities.GetLinksFromSection'(findTestObject('Object Repository/Page_Conferences  Events/div_search_results_events'))
+WebUI.verifyLinksAccessible(ResourceSearchResultLinks, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
-
